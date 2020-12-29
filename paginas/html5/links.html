@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Code - Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/scripts.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.png" width="80px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">INICIAL <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SNIPPETS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FRONT-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../html5/html5.html">HTML5</a>
+                        <a class="dropdown-item" href="#">CSS3</a>
+                        <a class="dropdown-item" href="#">JAVASCRIPT</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        BACK-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">MySQL</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+
+        <section class="boxVerde">
+            <div class="row">
+                <div class="limitadorConteudo">
+                    <a href="html5.html" style="text-decoration: none;">
+                        <p style="color: rgb(85, 84, 84); font-size: 11px; display: flex;"><i
+                                class="material-icons">arrow_back</i> <span
+                                style="font-weight: bold; margin-top: 4px;">Voltar a Grade</span></p>
+                    </a>
+                </div>
+                <h1 class="tituloPrincipalHtml">LINKS</h1>
+                <div class="limitadorConteudo">
+                    <h4>O que são links</h4>
+                    <div class="textoConteudo">
+                        <p>
+                            Links geralmente são textos que permitem que os usuários cliquem no caminho de uma página
+                            para outra.
+                        </p>
+                        <p>
+                            Links podem ser:
+                            <ul style="margin-left: 20px;">
+                                <li>Internos- para lugares específicos da página (âncoras)</li>
+                                <li>Locais - para páginas do mesmo domínio</li>
+                                <li>Globais - para outros domínios, fora do site</li>
+                            </ul>
+                        </p>
+                        <p>Os hiperlinks são definidos com a <b>&lt;a&gt</b> tag HTML :</p>
+                        <p><b>Exemplo de link interno:</b></p>
+                        <div class="code" style="line-height: 15pt;">
+                            <p>&lt<span class="rosa">a</span> <span class="verde">href</span>=<span
+                                    class="amarelo">"index.html"</span>&gtTexto do Link&lt<span class="rosa">a</span>&gt;</p>
+                        </div>
+                        <p><b>Exemplo de link local:</b></p>
+                        <div class="code" style="line-height: 15pt;">
+                            <p>&lt<span class="rosa">a</span> <span class="verde">href</span>=<span
+                                    class="amarelo">"index.html"</span>&gtTexto do Link&lt<span class="rosa">a</span>&gt;</p>
+                        </div>
+                        <p><b>href-</b>  é o atributo que especifica o endereço de destino</p>
+                        <p><b>"Texto do link"-</b>  é a parta que será visível para o usuário clicar e ser enviado para o
+                            endereço especificado.</p>
+                        <p><b>Exemplo de link global:</b></p>
+                        <div class="code" style="line-height: 15pt;">
+                            <p>&lt<span class="rosa">a</span> <span class="verde">href</span>=<span
+                                    class="amarelo">"url"</span>&gtTexto do Link&lt<span class="rosa">a</span>&gt;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-left:280px;">
+                    <div onclick="btnVoltar_onClick()" class="botao widthMax"
+                        style="margin-top: 20px; display: inline;">
+                        <a href="#" class="btn">Voltar</a>
+                    </div>
+                    <div class="botao widthMax"
+                        style="margin-top: 20px; float: left; display: contents; text-align: right;">
+                        <a href="tabelas.html" class="btn">Próximo</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    </div>
+
+    </div>
+
+    <footer>
+        <p> Copyright © Start
+            Code - 2019</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

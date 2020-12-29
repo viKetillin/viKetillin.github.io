@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Code - Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/scripts.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.png" width="80px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">INICIAL <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SNIPPETS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FRONT-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../html5/html5.html">HTML5</a>
+                        <a class="dropdown-item" href="#">CSS3</a>
+                        <a class="dropdown-item" href="#">JAVASCRIPT</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        BACK-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">MySQL</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+
+        <section class="boxVerde">
+            <div class="row">
+                <a href="html5.html" style="text-decoration: none;">
+                    <div class="limitadorConteudo">
+                        <p style="color: rgb(85, 84, 84); font-size: 11px; display: flex;"><i
+                                class="material-icons">arrow_back</i> <span
+                                style="font-weight: bold; margin-top: 4px;">Voltar a Grade</span></p>
+                    </div>
+                </a>
+                <h1 class="tituloPrincipalHtml">META TAGS</h1>
+                <div class="limitadorConteudo">
+                    <h4>O que são metatags?</h4>
+                    <div class="textoConteudo">
+                        <p>A Meta Tag, representada pela tag
+                            <meta> é uma tag diferenciada das demais por não ter nenhum efeito aparente na página em si,
+                            mas sim por ser responsável por ações externas à página, como por exemplo informar à
+                            buscadores como Google ou Bing algumas informações a respeito da página, como título e uma
+                            breve descrição.</p>
+                        <h4>Tipos de Meta Tags</h4>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">Author</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">O nome do autor da página.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">Copyright</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Direito autoral da página.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">Description</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Descrição da página.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">Expires</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Data em que o documento deve ser considerado
+                                    expirado.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">Keywords</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Aqui é um dos locais onde os motores de
+                                    busca procuram informações a respeito da página.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div onclick="btnVoltar_onClick()" class="botao widthMax"
+                            style="margin-top: 20px; display: inline;">
+                            <a href="#" class="btn">Voltar</a>
+                        </div>
+                        <div class="botao widthMax"
+                            style="margin-top: 20px; float: left; display: contents; text-align: right;">
+                            <a href="estrutura.html" class="btn">Próximo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    </div>
+
+    <footer>
+        <p> Copyright © Start
+            Code - 2019</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

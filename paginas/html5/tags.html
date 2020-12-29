@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Code - Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/scripts.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.png" width="80px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">INICIAL <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SNIPPETS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FRONT-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../html5/html5.html">HTML5</a>
+                        <a class="dropdown-item" href="#">CSS3</a>
+                        <a class="dropdown-item" href="#">JAVASCRIPT</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        BACK-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">MySQL</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+
+        <section class="boxVerde">
+            <div class="row">
+                <a href="html5.html" style="text-decoration: none;">
+                    <div class="limitadorConteudo">
+                        <p style="color: rgb(85, 84, 84); font-size: 11px; display: flex;"><i
+                                class="material-icons">arrow_back</i> <span
+                                style="font-weight: bold; margin-top: 4px;">Voltar a Grade</span></p>
+                    </div>
+                </a>
+                <h1 class="tituloPrincipalHtml">TAGS</h1>
+                <div class="limitadorConteudo">
+                    <h4>O que são tags?</h4>
+                    <div class="textoConteudo">
+                        <p><strong>TAGS</strong> são etiquetas que servem para indicar ao navegador como ele deve
+                            apresentar o site. Ou seja, quando escrevo um código HTML estou escrevendo tags que serão
+                            interpretadas pelo browser, produzindo assim a estrutura do site.</p>
+                        <p>Todas as tags são definidas por <strong>&lt &gt</strong>. As tags em sua maioria, possuem
+                            duas partes, uma
+                            tag de abertura e uma de fechamento que indicam o inicio e o fim de um determinado
+                            elemento, temos como exemplo a tag <strong>&ltp&gt &lt/p&gt</strong>. Existe também tags que
+                            não necessitam
+                            de um par, um exemplo disso é a tag <strong>&lthr/&gt</strong>, geralmente esse tipo de tag
+                            indica o inicio e
+                            o fim na mesma tag inserindo a <strong>/</strong> do lado direito.
+                        </p>
+                        <p>O html possui uma série de tag pré definidas para você construir suas páginas, porém,
+                            atualmente é possível que você crie suas
+                            próprias tags.</p>
+                        </p>
+                        <p>Você pode fazer anotações em seu código, essas anotações são chamadas de comentários, os
+                            comentários são bastante úteis para estudantes, pois você pode esquecer o que determinada
+                            parte do código faz, através do comentário, você pode indicar do que se trata cada parte.
+                            Quando um código é desenvolvido em grupo, comentários também pode ser útil, pois assim, não
+                            é necessário explicar a cada individuo o que o código faz.
+                            Os comentários aparecem apenas no código e fica oculto no browser. Cada linguagem de
+                            programação tem o seu próprio formato de comentário, na linguagem de hipertexto (HTML) ele é
+                            feito da seguinte forma: <strong>&lt!--ANOTAÇÃO--&gt</strong>.
+                        </p>
+                        <p>
+                            O HTML não é case-sensitive, ou seja, nos marcadores não faz diferença escrever em
+                            maiúsculas ou minúsculas.
+                        </p>
+                        <h4>Atributos</h4>
+                        <p>
+                            Atributos são informações que passamos na Tag para que ela se comporte da maneira esperada.
+                            Existem atributos globais (que funcionam em todas as Tags) e específicos (que são
+                            direcionados
+                            para cada Tag, através de especificação).
+                        </p>
+                        <p>
+                            Os Atributos possuem nome e um valor, existem Atributos que você vai usar praticamente
+                            sempre e
+                            existem outros que serão mais raros.
+                        </p>
+                        <p><strong>Atributos globais:</strong>
+                        </p>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">accesskey</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Determina uma (ou
+                                    mais) tecla(s) de atalho para o elemento. Para definir
+                                    mais de uma tecla, coloque-as separadas por espaço.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">class</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Determina uma (ou mais) classe(s) para o
+                                    elemento. Para definir mais
+                                    de uma
+                                    classe, coloque-as separadas por espaço.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">draggable</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Define se um elemento é arrastável ou não.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">hidden</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Oculta o elemento onde for declarado.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">id</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">É o identificador único do elemento. Somente deve
+                                    ser declarado um id por
+                                    elemento. E este id não deve ser repetido na mesma página.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">lang</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Determina o idioma em que está escrito o
+                                    conteúdo do elemento.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">style</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Determina propriedades CSS diretamente no
+                                    elemento.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">tabindex</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Organiza os elementos por ordem de
+                                    tabulação. Deve-se usar valor
+                                    numérico.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">title</dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Representa um auxílio ao elemento. Semelhante
+                                    a dica do elemento.</p>
+                            </div>
+                        </div>
+                        <p><strong>Exemplo prático de uso de Tags e Atributos:</strong></p>
+                        <div class="code" style="line-height: 15pt; padding-bottom:1px; padding-top:5px;">
+                            <p style="margin-top:10px;">&lt<span class="rosa">img</span> <span
+                                    class="verde">src</span>=<span class="amarelo">"logo.png" alt="HTML 5
+                                    Logo"</span>&gt</p>
+                        </div>
+                        <p>A Tag <strong>&ltimg&gt</strong> define que o conteúdo do elemento é uma imagem e os
+                            atributos que utilizamos
+                            são <strong>src</strong> e <strong>alt</strong>.</p>
+                        <p> Existe a possibilidade de você criar o seu próprio atributo,
+                            para que o browser renderize isso você precisa criar um código em javascript que
+                            lê as tags que possuem esse atributo por exemplo:
+                            <div class="code" style="line-height: 15pt; padding-top: 10px;"> &lt<span
+                                    class="rosa">input</span> <span class="verde">type</span>=<span
+                                    class="amarelo">"text"</span> <span class="verde">startCode-cpf</span>&gt</div>
+                            Você pode aplicar por exemplo, uma máscara para colocar cpf. Esse tipo de atributo não
+                            é necessário atribuição de um valor.
+                        </p>
+                    </div>
+                    <div>
+                        <div onclick="btnVoltar_onClick()" class="botao widthMax"
+                            style="margin-top: 20px; display: inline;">
+                            <a href="#" class="btn">Voltar</a>
+                        </div>
+                        <div class="botao widthMax"
+                            style="margin-top: 20px; float: left; display: contents; text-align: right;">
+                            <a href="metaTags.html" class="btn">Próximo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p> Copyright © Start
+            Code - 2019</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

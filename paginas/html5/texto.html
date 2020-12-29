@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Code - Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/scripts.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.png" width="80px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">INICIAL <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SNIPPETS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FRONT-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../html5/html5.html">HTML5</a>
+                        <a class="dropdown-item" href="#">CSS3</a>
+                        <a class="dropdown-item" href="#">JAVASCRIPT</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        BACK-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">MySQL</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+
+        <section class="boxVerde">
+            <div class="row">
+                <a href="html5.html" style="text-decoration: none;">
+                    <div class="limitadorConteudo">
+                        <p style="color: rgb(85, 84, 84); font-size: 11px; display: flex;"><i
+                                class="material-icons">arrow_back</i> <span
+                                style="font-weight: bold; margin-top: 4px;">Voltar a Grade</span></p>
+                    </div>
+                </a>
+                <h1 class="tituloPrincipalHtml">TAGS DE TEXTOS</h1>
+                <div class="limitadorConteudo">
+                    <h2>Tags de título, parágrafo e formatação de texto</h2>
+                    <div class="textoConteudo">
+                        <p>
+                            As tags de formatação de textos, não servem somente para formatar os textos de forma visual,
+                            o principal objetivo dessas tags é deixar o html semântico, ou seja, descrever o conteúdo do
+                            documento para o browser para o melhor entendimento. Algumas das tags abaixo já foram vistas
+                            no capítulo "Semântica", mas serão abordadas novamente para facilitar o entendimento.
+                        </p>
+
+
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange">
+                                <h4>Tag de título</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Existem 6 tipos de títulos diferentes em html classificados pelo
+                                    tamanho de fonte que vão desde <strong>&lt;h1&gt;&lt;/h1&gt;</strong> até
+                                    <strong>&lt;h6&gt; &lt;/h6&gt</strong>.
+                                    <div class="code" style="line-height: 15pt; padding-bottom:1px; padding-top:5px;">
+                                        <p style="margin-top:10px;">&lt;<span class="rosa">h1</span>&gt; &lt;/<span
+                                                class="rosa">h1</span>&gt;</p>
+                                        <p style="margin-top:10px;">&lt;<span class="rosa">h2</span>&gt; &lt;/<span
+                                                class="rosa">h2</span>&gt;</p>
+                                        <p style="margin-top:10px;">&lt;<span class="rosa">h3</span>&gt; &lt;/<span
+                                                class="rosa">h3</span>&gt;</p>
+                                        <p style="margin-top:10px;">&lt;<span class="rosa">h4</span>&gt; &lt;/<span
+                                                class="rosa">h4</span>&gt;</p>
+                                        <p style="margin-top:10px;">&lt;<span class="rosa">h5</span>&gt; &lt;/<span
+                                                class="rosa">h5</span>&gt;</p>
+                                        <p style="margin-top:10px;">&lt;<span class="rosa">h6</span>&gt; &lt;/<span
+                                                class="rosa">h6</span>&gt;</p>
+                                    </div>
+                                    <p>Motores de busca utilizam os títulos, ou seja, as tags de título para indexar a
+                                        estrutura e a organização do conteúdo dos sites.</p>
+
+                                    <p>Essa estrutura indexada segue o padrão: &lt;h1&gt; para os títulos principais,
+                                        &lt;h2&gt;
+                                        para os subtítulos, &lt;h3&gt; para os subtítulos dos subtítulos e contínua
+                                        seguindo essa ordem do mais importante ao menos importante.
+                                    </p>
+
+                                    <p><strong>Dica:</strong> Use as tags de título somenta para títulos, jamais pela
+                                        formatação da fonte!</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange">
+                                <h4>Tag de parágrafo</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">A tag que representa um parágrafo dentro do html é a tag
+                                    <b>&lt;p&gt;</b><b>&lt;/p&gt;</b>.
+                                    <div class="code" style="line-height: 15pt; padding-bottom:1px; padding-top:5px;">
+                                        <p style="margin-top:10px;">&lt;<span class="rosa">p</span>&gt; Páragrafo aqui!
+                                            &lt;/<span class="rosa">p</span>&gt;</p>
+                                    </div>
+                                    <p><strong>Observação:</strong> A tag de parágrafo remove todos os espaços
+                                        adicionais,
+                                        por
+                                        isso para colocar espaços em brancos propositalmente, não adianta apenas
+                                        utilizar
+                                        espaço, você deve ou criar um estilo para adicionar o espaço ou utilizar a
+                                        entidade
+                                        &nbsp; do html.
+                                    </p>
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange">
+                                <h4>Quebra de linha</h4>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <p>Para quebrar linhas utilizamos a tag <b>&lt;/br&gt;</b>.</p>
+                                    <p>Existe também a tag &lt;hr&gt;&lt;/hr&gt; que em adicional a quebra de linha, ela
+                                        cria um desenho de uma linha horizontal indicando o fim da seção.
+                                    </p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 w-100 shadow">
+                            <div class="card-header text-white bg-orange">
+                                <h4>Tags de formatação de textos</h4><dfn class="tituloDefinicao"></dfn>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    <p>A tag <b>&lt;b&gt;&lt;/b&gt;</b> é utilizado para deixar o
+                                        texto em negrito, apenas por questão de estilização.
+                                    </p>
+                                    <p>A tag <b>&lt;strong&gt;&lt;/strong&gt;</b> tem o mesmo efeito que a tag b
+                                        visualmente,
+                                        mas ela serve espeficicamente para ênfatizar o conteúdo do texto que está
+                                        dentro dela.
+                                    </p>
+                                    <p>A tag <b>&lt;i&gt;&lt;/i&gt;</b> serve para deixar o texto em itálico, não tem
+                                        efeito algum na semântica.</p>
+                                    <p>Outra tag que deixa o texto em itálico é a tag <b>&lt;em&gt;&lt;/em&gt;</b>, mas
+                                        diferente da tag i ela serve vai além de deixar apenas o texto em itálico, ela
+                                        serve também para dar ênfase ao texto.</p>
+                                    <p>A tag <b>&lt;ins&gt;&lt;/ins&gt;</b> mostra que um texto foi inserido na página.
+                                    </p>
+                                    <p>Em conjunto com a tag <b>&lt;cite&gt;&lt;/cite&gt;</b> é utilizado a tag
+                                        &lt;blockquote&gt;&lt;/blockquote&gt; ou a tag &lt;q&gt;&lt;/q&gt; para inserir
+                                        citações, a tag &lt;blockquote&gt;&lt;/blockquote&gt; para citações maiores e a
+                                        tag &lt;q&gt;&lt;/q&gt; para citações menores.</p>
+                                    <p>
+                                        A tag <b>&lt;abbr&gt;&lt;/abbr&gt;</b> apresenta abreviações, juntamente com a
+                                        forma completa.
+                                    </p>
+                                    <p>
+                                        A tag <b>&lt;address&gt;&lt;/address&gt;</b> serve para especificar as
+                                        informações de contato do autor/proprietário de um documento ou artigo
+                                    </p>
+                                    <p>Essa é uma tag de definição <b>&lt;dfn&gt;&lt;/dfn&gt;</b>, ela serve para
+                                        descrever algum conteúdo, por exemplo, no
+                                        contexto
+                                        de um dicionário você usaria da seguinte
+                                        forma<b>&lt;dfn&gt;Pneumoultramicroscopicossilicovulcanoconiótico&lt;/dfn&gt;</b>
+                                        Indica alguém ou algo relacionado com uma doença aguda nos pulmões
+                                        que se origina com a inalação de cinzas vulcânicas.</p>
+                                    <p>
+                                        A tag <b>&lt;code&gt;&lt;/code&gt;</b> serve para apresentar trechos de códigos
+                                        dentro de um parágrafo.
+                                    </p>
+                                    <p>
+                                        A tag <b>&lt;sub&gt;&lt;/sub&gt;</b> serve para deixar um texto subscrito.
+                                        Exemplo: H
+                                        <sub>2</sub>O = Água
+                                    </p>
+                                    <p>
+                                        A tag <b>&lt;sup&gt;&lt;/sup&gt;</b> serve para deixar um texto sobscrito.
+                                        Exemplo
+                                        2<sup>2</sup> = 4
+                                    </p>
+                                    <p>
+                                        A tag <b>&lt;small&gt;&lt;/small&gt;</b> reduz o tamanho do texto, o objetivo é
+                                        referir
+                                        informações redundantes ou inválidas.
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-left:280px;">
+                    <div onclick="btnVoltar_onClick()" class="botao widthMax"
+                        style="margin-top: 20px; display: inline;">
+                        <a href="#" class="btn">Voltar</a>
+                    </div>
+                    <div class="botao widthMax"
+                        style="margin-top: 20px; float: left; display: contents; text-align: right;">
+                        <a href="links.html" class="btn">Próximo</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+
+    <footer>
+        <p> Copyright © Start
+            Code - 2019</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

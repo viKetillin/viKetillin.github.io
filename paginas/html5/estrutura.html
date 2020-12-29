@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Start Code - Index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/scripts.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.png" width="80px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">INICIAL <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SNIPPETS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        FRONT-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../html5/html5.html">HTML5</a>
+                        <a class="dropdown-item" href="#">CSS3</a>
+                        <a class="dropdown-item" href="#">JAVASCRIPT</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        BACK-END
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">MySQL</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+
+        <section class="boxVerde">
+            <div class="row">
+                <a href="html5.html" style="text-decoration: none;">
+                    <div class="limitadorConteudo">
+                        <p style="color: rgb(85, 84, 84); font-size: 11px; display: flex;"><i
+                                class="material-icons">arrow_back</i> <span
+                                style="font-weight: bold; margin-top: 4px;">Voltar a Grade</span></p>
+                    </div>
+                </a>
+                <h1 class="tituloPrincipalHtml">ESTRUTURA BÁSICA HTML</h1>
+                <div class="limitadorConteudo">
+                    <h4>Iniciando o código básico de HTML</h4>
+                    <div class="textoConteudo">
+                        <p>O documento HTML possui uma estrutura básica, você sempre começará o seu HTML por esse
+                            código. Geralmente editores de textos como o visual studio code já tem atalhos para iniciar
+                            essa os documentos HTMLs com essa estrutura automáticamente, não é necessário que você
+                            decore ela, mas é bom que memorize. </p>
+
+                        <p><strong>Estrutura Básica:</strong></p>
+                        <div class="code" style="line-height: 15pt;">
+                            <p>&lt!<span class="rosa">DOCTYPE html</span>&gt</p>
+                            <p>&lt<span class="rosa">html</span> <span class="verde">lang</span>=<span
+                                    class="amarelo">"pt-br"</span>&gt</p>
+                            <p>&lt<span class="rosa">head</span>&gt</p>
+                            <p>&lt<span class="rosa">title</span>&gtTítulo da página&lt/<span
+                                    class="rosa">title</span>&gt</p>
+                            <p>&lt<span class="rosa">meta</span> <span class="verde">charset</span>=<span
+                                    class="amarelo">"utf-8"</span>/&gt</p>
+                            <p>&lt/<span class="rosa"> head</span>&gt</p>
+                            <p>&lt<span class="rosa">body</span>&gt</p>
+                            <p>Aqui vai o código HTML que fará seu site aparecer.</p>
+                            <p>&lt/<span class="rosa">body</span>&gt</p>
+                            <p>&lt/<span class="rosa">html</span>&gt</p>
+                        </div>
+                        <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma
+                            divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</p>
+
+                        <ul style="margin-left: 20px;">
+                            <li>Definição do documento (doctype)</li>
+                            <li>Cabeça (head)</li>
+                            <li>Corpo (body)</li>
+                            <li>Doctype - Definindo o documento</li>
+                        </ul>
+
+                        <p>O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que
+                            podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que
+                            fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e
+                            deve ser sempre a PRIMEIRA LINHA do seu documento.</p>
+
+                        <p><strong>HEAD</strong></p>
+                        <p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento.
+                            São dados implícitos, de uso e controle do documento: vinculação com outros arquivos,
+                            aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do
+                            cabeçalho fica delimitado entre a abertura e fechamento tag head.</p>
+
+                        <p><strong>BODY</strong></p>
+                        <p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do
+                            documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer
+                            forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia,
+                            etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica
+                            neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags</p>
+
+                        <p><strong>&ltbody&gt</strong> e <strong>&lt/body&gt</strong>.</p>
+
+                        <p>Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se
+                            aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar
+                            conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá
+                            obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de
+                            codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar
+                            marcada no cabeçalho do mesmo documento.</p>
+
+                        <p>Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção
+                            da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal,
+                            etc.
+                        </p>
+                    </div>
+                    <div>
+                        <div onclick="btnVoltar_onClick()" class="botao widthMax"
+                            style="margin-top: 20px; display: inline;">
+                            <a href="#" class="btn">Voltar</a>
+                        </div>
+                        <div class="botao widthMax"
+                            style="margin-top: 20px; float: left; display: contents; text-align: right;">
+                            <a href="semantica.html" class="btn">Próximo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    </div>
+
+    <footer>
+        <p> Copyright © Start
+            Code - 2019</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

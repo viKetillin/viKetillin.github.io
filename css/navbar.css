@@ -1,0 +1,33 @@
+.row {
+    margin: 0;
+}
+.bg-dark {
+    background-color: #000!important;
+}
+.nav-link {
+    color: #f236a0 !important;
+    font-weight: bold;
+}
+.navbar-nav a:hover {
+    text-shadow: 5px 5px 5px rgb(202, 255, 200);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 5px;
+    -webkit-border-radius: 50%;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #000;
+    -webkit-border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #f236a0;
+    -webkit-border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #f236a0;
+    -webkit-border-radius: 3px;
+}

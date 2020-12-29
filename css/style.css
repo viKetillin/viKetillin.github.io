@@ -1,0 +1,28 @@
+footer p{
+    background-color: #000; 
+    color:#f236a0; 
+    margin-bottom: 0px; 
+    text-align: center;
+    padding:12px;
+    font-size: large;
+}
+
+.btn.btnTimeline{
+    background-color: #fff;
+    color: #ea6228;
+}
+
+.btn.btnTimeline:hover{
+    background-color: #fff;
+    color: #ea6228;
+}
+
+.btn {
+    background-color: #f236a0;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #c9197c;
+    color: #fff;
+}
