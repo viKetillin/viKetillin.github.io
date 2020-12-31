@@ -7,16 +7,6 @@ footer p{
     font-size: large;
 }
 
-.btn.btnTimeline{
-    background-color: #fff;
-    color: #ea6228;
-}
-
-.btn.btnTimeline:hover{
-    background-color: #fff;
-    color: #ea6228;
-}
-
 .btn {
     background-color: #f236a0;
     color: #fff;
