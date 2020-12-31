@@ -3,7 +3,7 @@ var pageHTML = "/paginas/html5/html5.html";
 var pageC = "/paginas/c/c.html";
 var dataSourceCard = null;
 var datasourceCardHTML = null;
-var dataSourceCardC = null;
+var datasourceCardC = null;
 
 datasourceCardHTML = [{
     tituloCard: "INTRODUÇÃO",
@@ -132,7 +132,7 @@ datasourceCardC = [{
 if (window.location.pathname == pageHTML) {
     dataSourceCard = datasourceCardHTML;
 } else if (window.location.pathname == pageC) {
-    dataSourceCard = dataSourceCardC;
+    dataSourceCard = datasourceCardC;
 } else {
     dataSourceCard = null;
 }
