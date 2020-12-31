@@ -2,8 +2,10 @@ var page = window.location.pathname;
 var pageHTML = "/paginas/html5/html5.html";
 var pageC = "/paginas/c/c.html";
 var dataSourceCard = null;
+var datasourceCardHTML = null;
+var dataSourceCardC = null;
 
-var datasourceCardHTML = [{
+datasourceCardHTML = [{
     tituloCard: "INTRODUÇÃO",
     descricaoCard: "Entenderemos o que é HTML (Hypertext Markup Language), sua estrutura e qual é seu objetivo no contexto do desenvolvimento de software.",
     hrefBotao: "introducao.html",
@@ -65,7 +67,7 @@ var datasourceCardHTML = [{
 },
 ]
 
-var datasourceCardC = [{
+datasourceCardC = [{
     tituloCard: "Visão geral",
     descricaoCard: "Nessa sessão veremos uma macrovisão do curso.",
     hrefBotao: "introducao.html",
