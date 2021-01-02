@@ -8,62 +8,62 @@ var datasourceCardC = null;
 datasourceCardHTML = [{
     tituloCard: "INTRODUÇÃO",
     descricaoCard: "Entenderemos o que é HTML (Hypertext Markup Language), sua estrutura e qual é seu objetivo no contexto do desenvolvimento de software.",
-    hrefBotao: "tutoriais.html?codigoTutorial=0",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=0",
 },
 {
     tituloCard: "TAGS",
     descricaoCard: "Aqui iremos ver o que são tags e os principais atributos dessas tags.",
-    hrefBotao: "tutoriais.html?codigoTutorial=1",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=1",
 },
 {
     tituloCard: "META TAGS",
     descricaoCard: "Aqui encontraremos todas as informações que você precisa saber sobre meta tags.",
-    hrefBotao: "tutoriais.html?codigoTutorial=2",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=2",
 },
 {
     tituloCard: "ESTRUTURA",
     descricaoCard: "Aqui veremos a estrutura básica do HTML.",
-    hrefBotao: "tutoriais.html?codigoTutorial=3",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=3",
 },
 {
     tituloCard: "SEMÂNTICA",
     descricaoCard: "Entenderemos o significado das informações HTML para páginas da Web.",
-    hrefBotao: "tutoriais.html?codigoTutorial=4",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=4",
 },
 {
     tituloCard: "TEXTO",
     descricaoCard: "Nesta parte falarei sobre a formatação de texto no html e meu objetivo é que você entenda como organizar seu conteúdo distribuindo corretamento os títulos, parágrafos, negritos, itálicos, etc de forma semântica.",
-    hrefBotao: "tutoriais.html?codigoTutorial=5",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=5",
 },
 {
     tituloCard: "LISTAS",
     descricaoCard: "Nessa parte aprenderemos sobre representações de listas no HTML.",
-    hrefBotao: "tutoriais.html?codigoTutorial=6",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=6",
 },
 {
     tituloCard: "LINKS",
     descricaoCard: "Nessa seção encontraremos informações sobre links.",
-    hrefBotao: "tutoriais.html?codigoTutorial=7",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=7",
 },
 {
     tituloCard: "TABELAS",
     descricaoCard: "Nessa sessão entenderemos o que são tabelas e como incluir em páginas HTML.",
-    hrefBotao: "tutoriais.html?codigoTutorial=8",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=8",
 },
 {
     tituloCard: "FORMULÁRIOS",
     descricaoCard: "Veremos como estruturar um formulário HTML.",
-    hrefBotao: "tutoriais.html?codigoTutorial=9",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=9",
 },
 {
     tituloCard: "IMAGENS",
     descricaoCard: "Aqui veremos como inserir imagens em seu web site.",
-    hrefBotao: "tutoriais.html?codigoTutorial=10",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=10",
 },
 {
     tituloCard: "VIDEO",
     descricaoCard: "Nessa sessão veremos como inserir vídeos através do HTML em sua página web.",
-    hrefBotao: "tutoriais.html?codigoTutorial=11",
+    hrefBotao: "tutoriais.html?codigoTutorialURL=11",
 },
 ]
 
