@@ -67,9 +67,7 @@
         margin-top: 20px;
     }
     .limitadorConteudo {
-        margin-top: 20px;
-        margin-left: 500px;
-        margin-right: 500px;
+        margin: 20px auto;
         text-align: justify;
     }
     .textoConteudo {
@@ -218,9 +216,8 @@
         font-size: 40px;
     }
     .limitadorConteudo {
-        margin-top: 20px;
-        margin-left: 280px;
-        margin-right: 280px;
+        margin: 0 auto;
+        padding:20px 280px;
         text-align: justify;
     }
     .textoConteudo {

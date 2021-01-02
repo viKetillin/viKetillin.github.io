@@ -16,3 +16,29 @@ footer p{
     background-color: #c9197c;
     color: #fff;
 }
+
+a.btnVoltarGrade{
+    color: rgb(85, 84, 84); 
+    font-size: 11px; 
+    display: flex;
+}
+
+a.btnVoltarGrade span{
+    font-weight: bold; 
+    margin-top: 4px;
+}
+
+.divBtnProximo{
+    margin-top: 20px; 
+    float: left; 
+    display: contents; 
+    text-align: right;
+}
+
+#btnVoltar{
+    margin-right: 12px;
+}
+
+#divBtnVoltar{
+    margin-top: 20px;
+}
