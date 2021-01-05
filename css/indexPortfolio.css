@@ -1,3 +1,6 @@
+html{
+    overflow: hidden;
+}
 nav{
     height: 100vh; 
     background-color:#333; 
