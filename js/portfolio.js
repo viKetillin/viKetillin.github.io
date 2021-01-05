@@ -102,10 +102,10 @@ $(document).ready(function () {
         '</ul>' +
         '<ul class="ulNav">' +
         '<li id="navInicio"><a href="index.html?codigoNav=0"><i class="fas fa-home"></i> Inicial</li>' +
-        '<li><a href="index.html?codigoNav=1"><i class="fas fa-female"></i> Sobre</a></li>' +
-        '<li><a href="index.html?codigoNav=2"><i class="fas fa-graduation-cap"></i> Resumo</a></li>' +
-        '<li><a href="index.html?codigoNav=3"><i class="fas fa-briefcase"></i> Portfólio</a></li>' +
-        '<li><a href="index.html?codigoNav=4"><i class="fas fa-address-book"></i> Contato</a></li>' +
+        '<li id="navSobre"><a href="index.html?codigoNav=1"><i class="fas fa-female"></i> Sobre</a></li>' +
+        '<li id="navResumo"><a href="index.html?codigoNav=2"><i class="fas fa-graduation-cap"></i> Resumo</a></li>' +
+        '<li id="navPortfolio"><a href="index.html?codigoNav=3"><i class="fas fa-briefcase"></i> Portfólio</a></li>' +
+        '<li id="navContato"><a href="index.html?codigoNav=4"><i class="fas fa-address-book"></i> Contato</a></li>' +
         '<li><a target="_blank" href="indexHTML.html"><i class="fas fa-chalkboard-teacher"></i> Tutoriais</a></li>' +
         '</ul>' +
 
@@ -114,9 +114,39 @@ $(document).ready(function () {
     );
 
     if (parseInt(codigoNav) == 0 || codigoNav == null) {
+        $("#navInicio").addClass("active");
         $("#divInicio").css("display", "");
-        $("#navInicio").addClass("active")
+        $("#divSobre").css("display", "none");
+        $("#divResumo").css("display", "none");
+        $("#divPortfolio").css("display", "none");
+        $("#divContato").css("display", "none");
     } else if (parseInt(codigoNav) == 1) {
-        $("#divInicio").css("display", "none")
+        $("#navSobre").addClass("active");
+        $("#divInicio").css("display", "none");
+        $("#divSobre").css("display", "");
+        $("#divResumo").css("display", "none");
+        $("#divPortfolio").css("display", "none");
+        $("#divContato").css("display", "none");
+    }else if (parseInt(codigoNav) == 2) {
+        $("#navResumo").addClass("active");
+        $("#divInicio").css("display", "none");
+        $("#divSobre").css("display", "none");
+        $("#divResumo").css("display", "");
+        $("#divPortfolio").css("display", "none");
+        $("#divContato").css("display", "none");
+    }else if (parseInt(codigoNav) == 3) {
+        $("#navPortfolio").addClass("active");
+        $("#divInicio").css("display", "none");
+        $("#divSobre").css("display", "none");
+        $("#divResumo").css("display", "none");
+        $("#divPortfolio").css("display", "");
+        $("#divContato").css("display", "none");
+    }else if (parseInt(codigoNav) == 4) {
+        $("#navContato").addClass("active");
+        $("#divInicio").css("display", "none");
+        $("#divSobre").css("display", "none");
+        $("#divResumo").css("display", "none");
+        $("#divPortfolio").css("display", "none");
+        $("#divContato").css("display", "");
     }
 });
