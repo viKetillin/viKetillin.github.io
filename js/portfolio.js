@@ -83,7 +83,7 @@ $(document).ready(function () {
     '</nav>'
     );
 
-    if (parseInt(codigoNav) == 0 || parseInt(codigoNav) == null) {
+    if (parseInt(codigoNav) == 0 || codigoNav == null) {
         $("#divInicio").css("display", "");
         $("#navInicio").addClass("active")
     }else if(parseInt(codigoNav) == 1){
