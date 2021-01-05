@@ -1,0 +1,74 @@
+nav{
+    height: 100vh; 
+    background-color:#333; 
+    width: 230px; 
+    padding-top: 30px;
+}
+
+.imgPortfolio{
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+ul.ulNome{
+    list-style-type: none; 
+    padding: 0; 
+    text-align: center;
+}
+
+li.liNome{
+    color:#fff; 
+    font-size:30px;
+}
+
+li.liCargo{
+    color: rgba(255, 255, 255, 0.705);
+}
+
+ul.ulNav{
+    list-style-type: none; 
+    color: rgba(255, 255, 255, 0.705); 
+    padding: 0px; 
+    font-size: 18px;
+}
+
+ul.ulNav li:hover{
+    color: #fff;
+    cursor: pointer;
+    border-left:8px solid #DA062C; 
+    padding-left: 17px;
+}
+
+ul.ulNav li{
+    padding: 8px 0px 8px 25px; 
+}
+
+ul.ulNav li i{
+    width: 24px; 
+    text-align: center;
+    margin-right: 6px;
+}
+
+.active{
+    border-left:8px solid #DA062C; 
+    padding-left: 17px !important; 
+    
+}
+
+.active a{
+    color:#fff !important;
+}
+
+.typewrite{
+    color: #fff;
+    border-bottom:3px solid #DA062C;
+}
+
+ul.ulNav a{
+    color: rgba(255, 255, 255, 0.705);;
+    text-decoration: none;
+}
+
+#divInicio div{
+    z-index: 1; position: absolute; top: 35%; left: 45%; text-align: center;
+}

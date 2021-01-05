@@ -110,13 +110,40 @@ var cardsTagsHTML = [{
     codigoCardTag: 8,
     titulo: "title",
     descricao: "Representa um auxílio ao elemento. Semelhante a dica do elemento."
+}]
+
+var cardsMetaTagsHTML = [{
+    codigoCardTag: 0,
+    titulo: "Author",
+    descricao: "O nome do autor da página."
 },
-]
+{
+    codigoCardTag: 1,
+    titulo: "Copyright",
+    descricao: "Direito autoral da página."
+},
+{
+    codigoCardTag: 2,
+    titulo: "Description",
+    descricao: "Descrição da página."
+},
+{
+    codigoCardTag: 3,
+    titulo: "Expires",
+    descricao: "Data em que o documento deve ser considerado expirado."
+},
+{
+    codigoCardTag: 4,
+    titulo: "Keywords",
+    descricao: "Aqui é um dos locais onde os motores de busca procuram informações a respeito da página."
+}]
 
 var qtdCardTagsHTML = cardsTagsHTML.length;
+var qtdCardMetaTagsHTML = cardsMetaTagsHTML.length;
 var conteudoCardsTags = null;
 
 var cardTagHtml = [0]; 
+var cardMetaTagHtml = [0]; 
 
 for(var i = 0; i < qtdCardTagsHTML; i++) {
     cardTagHtml[i] =
@@ -125,6 +152,17 @@ for(var i = 0; i < qtdCardTagsHTML; i++) {
             '</div>'+
             '<div class="card-body">'+
                 '<p class="card-text">' + cardsTagsHTML[i].descricao + '</p>' +
+            '</div>'+
+        '</div>'
+}
+
+for(var i = 0; i < qtdCardMetaTagsHTML; i++) {
+    cardMetaTagHtml[i] =
+        '<div class="card mb-3 w-100 shadow">' +
+            '<div class="card-header text-white bg-orange"><dfn class="tituloDefinicao"> ' + cardsMetaTagsHTML[i].titulo + ' </dfn>'+
+            '</div>'+
+            '<div class="card-body">'+
+                '<p class="card-text">' + cardsMetaTagsHTML[i].descricao + '</p>' +
             '</div>'+
         '</div>'
 }
@@ -149,13 +187,21 @@ var conteudoTutorial = [{
         "<p>Atributos são informações que passamos na Tag para que ela se comporte da maneira esperada. Existem atributos globais (que funcionam em todas as Tags) e específicos (que são direcionados para cada Tag, através de especificação).</p>",
         "<p>Os Atributos possuem nome e um valor, existem Atributos que você vai usar praticamente sempre e existem outros que serão mais raros.</p>",
         "<p><strong>Atributos globais:</strong></p>",
-        [cardTagHtml],
+        cardTagHtml,       
         "<p><strong>Exemplo prático de uso de Tags e Atributos:</strong></p>",
         "<div class='code' style='line-height: 15pt; padding-bottom:1px; padding-top:5px;'><p style='margin-top:10px;'>&lt<span class='rosa'>img</span> <span class='verde'>src</span>=<span class='amarelo'>'logo.png' alt='HTML 5 Logo'</span>&gt</p></div>",
         "<p>A Tag <strong>&ltimg&gt</strong> define que o conteúdo do elemento é uma imagem e os atributos que utilizamos são <strong>src</strong> e <strong>alt</strong>.</p>",
         "<p> Existe a possibilidade de você criar o seu próprio atributo, para que o browser renderize isso você precisa criar um código em javascript que lê as tags que possuem esse atributo por exemplo:</p>",
         "<div class='code' style='line-height: 15pt; padding-top: 10px;'> &lt<span class='rosa'>input</span> <span class='verde'>type</span>=<span class='amarelo'>'text'</span> <span class='verde'>startCode-cpf</span>&gt</div>Você pode aplicar por exemplo, uma máscara para colocar cpf. Esse tipo de atributo não é necessário atribuição de um valor.</div>"
     ],
+},
+{
+    codigoTutorial: 2,
+    paragrafo: [
+        "<p>A Meta Tag, representada pela tag <meta> é uma tag diferenciada das demais por não ter nenhum efeito aparente na página em si, mas sim por ser responsável por ações externas à página, como por exemplo informar à buscadores como Google ou Bing algumas informações a respeito da página, como título e uma breve descrição.</p>",
+        "<h4>Tipos de Meta Tags</h4>",
+        [cardMetaTagHtml],
+    ]
 },
 ]
 
