@@ -76,7 +76,7 @@ ul.ulNav a{
     z-index: 1; position: absolute; top: 35%; left: 45%; text-align: center;
 }
 
-#divSobre{
+#divSobre, #divContato{
     background-color: #c5c5c5;
     height: 100vh;
     font-family: Roboto;
