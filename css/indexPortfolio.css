@@ -1,85 +1,166 @@
-html{
+html {
     overflow: hidden;
 }
-nav{
-    height: 100vh; 
-    background-color:#333; 
-    width: 230px; 
+
+nav {
+    height: 100vh;
+    background-color: #333;
+    width: 230px;
     padding-top: 30px;
 }
 
-.imgPortfolio{
-    text-align: center; 
+.imgPortfolio {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-ul.ulNome{
-    list-style-type: none; 
-    padding: 0; 
+ul.ulNome {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
 }
 
-li.liNome{
-    color:#fff; 
-    font-size:30px;
+li.liNome {
+    color: #fff;
+    font-size: 30px;
 }
 
-li.liCargo{
+li.liCargo {
     color: rgba(255, 255, 255, 0.705);
 }
 
-ul.ulNav{
-    list-style-type: none; 
-    color: rgba(255, 255, 255, 0.705); 
-    padding: 0px; 
+ul.ulNav {
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.705);
+    padding: 0px;
     font-size: 18px;
 }
 
-ul.ulNav li:hover{
+ul.ulNav li:hover {
     color: #fff;
     cursor: pointer;
-    border-left:8px solid #DA062C; 
+    border-left: 8px solid #DA062C;
     padding-left: 17px;
 }
 
-ul.ulNav li{
-    padding: 8px 0px 8px 25px; 
+ul.ulNav li {
+    padding: 8px 0px 8px 25px;
 }
 
-ul.ulNav li i{
-    width: 24px; 
+ul.ulNav li i {
+    width: 24px;
     text-align: center;
     margin-right: 6px;
 }
 
-.active{
-    border-left:8px solid #DA062C; 
-    padding-left: 17px !important; 
-    
+.active {
+    border-left: 8px solid #DA062C;
+    padding-left: 17px !important;
 }
 
-.active a{
-    color:#fff !important;
+.active a {
+    color: #fff !important;
 }
 
-.typewrite{
+.typewrite {
     color: #fff;
-    border-bottom:3px solid #DA062C;
+    border-bottom: 3px solid #DA062C;
 }
 
-ul.ulNav a{
-    color: rgba(255, 255, 255, 0.705);;
+ul.ulNav a {
+    color: rgba(255, 255, 255, 0.705);
+    ;
     text-decoration: none;
 }
 
-#divInicio div{
-    z-index: 1; position: absolute; top: 35%; left: 45%; text-align: center;
+#divInicio div {
+    z-index: 1;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    text-align: center;
 }
 
-#divSobre, #divContato{
+#divSobre,
+#divContato {
     background-color: #c5c5c5;
     height: 100vh;
     font-family: Roboto;
 }
 
-/** Dog **/
+.nomeInicio {
+    font-size: 80px;
+    color: #fff;
+    display: block;
+}
+
+.nomeInicio span {
+    color: #DA062C;
+}
+
+.minhaDescricao {
+    font-size: 30px;
+    color: #fff;
+}
+
+.backgroundPortfolio {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#divSobre .div {
+    padding: 30px 100px 0px 330px;
+    margin: 0 auto;
+}
+
+#divSobre .div .apresentacaoNome {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+#divSobre .div .descricaoSobre {
+    font-size: 16px;
+}
+
+.divInfo {
+    margin-top: 30px;
+}
+
+.spanInfo {
+    display: block;
+    margin-top: 20px;
+}
+
+.spanInfo i {
+    color: #DA062C;
+    font-size: 22px;
+    text-align: center;
+    width: 34px;
+    margin-bottom: 10px
+}
+
+.bordaSobre {
+    width: 100%;
+    border-bottom: 5px solid #DA062C;
+    margin-top: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.btnSobre {
+    margin-top: 20px;
+    width: 146px;
+    border: 0px solid #fff;
+    color: #fff;
+    background-color: #DA062C;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.btnSobre i {
+    margin-right: 6px;
+}
