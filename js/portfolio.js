@@ -2,7 +2,7 @@ var urlString = window.location.href;
 var url = new URL(urlString);
 var codigoNav = url.searchParams.get("codigoNav");
 
-var TxtType = function (el, toRotate, period) {
+var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -12,7 +12,7 @@ var TxtType = function (el, toRotate, period) {
     this.isDeleting = false;
 };
 
-TxtType.prototype.tick = function () {
+TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
     var fullTxt = this.toRotate[i];
 
@@ -38,12 +38,12 @@ TxtType.prototype.tick = function () {
         delta = 500;
     }
 
-    setTimeout(function () {
+    setTimeout(function() {
         that.tick();
     }, delta);
 };
 
-window.onload = function () {
+window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
@@ -63,34 +63,27 @@ var $window = $(window);
 
 $window.on("mousewheel DOMMouseScroll", onMouseWheel);
 
-function onMouseWheel(event)
-	{
-		//Normalize event wheel delta
-		var delta = event.originalEvent.wheelDelta / 30 || -event.originalEvent.detail;
+function onMouseWheel(event) {
+    var delta = event.originalEvent.wheelDelta / 30 || -event.originalEvent.detail;
 
-		//If the user scrolled up, it goes to previous slide, otherwise - to next slide
-		if(delta < -1)
-		{
-            var newCodeNav = null;
-            if(parseInt(codigoNav) < 4){
-               newCodeNav = parseInt(codigoNav) + 1;
-               window.location.href = "index.html?codigoNav=" + newCodeNav;
-            }		
-		}
-		else if(delta > 1)
-		{
-            var newCodeNav = null;
-            if(parseInt(codigoNav) > 0){
-               newCodeNav = parseInt(codigoNav) - 1;
-               window.location.href = "index.html?codigoNav=" + newCodeNav;
-            }         
-		}
-
-		event.preventDefault();
-	}
+    if (delta < -1) {
+        var newCodeNav = null;
+        if (parseInt(codigoNav) < 4) {
+            newCodeNav = parseInt(codigoNav) + 1;
+            window.location.href = "index.html?codigoNav=" + newCodeNav;
+        }
+    } else if (delta > 1) {
+        var newCodeNav = null;
+        if (parseInt(codigoNav) > 0) {
+            newCodeNav = parseInt(codigoNav) - 1;
+            window.location.href = "index.html?codigoNav=" + newCodeNav;
+        }
+    }
+    event.preventDefault();
+}
 
 
-$(document).ready(function () {
+$(document).ready(function() {
     $("#sidebar").append(
         '<nav style="position: absolute; left: 0; z-index: 1;">' +
         '<div class="imgPortfolio">' +
@@ -113,6 +106,7 @@ $(document).ready(function () {
         '</nav>'
     );
 
+    //#region [Display sessões]
     if (parseInt(codigoNav) == 0 || codigoNav == null) {
         $("#navInicio").addClass("active");
         $("#divInicio").css("display", "");
@@ -127,21 +121,21 @@ $(document).ready(function () {
         $("#divResumo").css("display", "none");
         $("#divPortfolio").css("display", "none");
         $("#divContato").css("display", "none");
-    }else if (parseInt(codigoNav) == 2) {
+    } else if (parseInt(codigoNav) == 2) {
         $("#navResumo").addClass("active");
         $("#divInicio").css("display", "none");
         $("#divSobre").css("display", "none");
         $("#divResumo").css("display", "");
         $("#divPortfolio").css("display", "none");
         $("#divContato").css("display", "none");
-    }else if (parseInt(codigoNav) == 3) {
+    } else if (parseInt(codigoNav) == 3) {
         $("#navPortfolio").addClass("active");
         $("#divInicio").css("display", "none");
         $("#divSobre").css("display", "none");
         $("#divResumo").css("display", "none");
         $("#divPortfolio").css("display", "");
         $("#divContato").css("display", "none");
-    }else if (parseInt(codigoNav) == 4) {
+    } else if (parseInt(codigoNav) == 4) {
         $("#navContato").addClass("active");
         $("#divInicio").css("display", "none");
         $("#divSobre").css("display", "none");
@@ -149,4 +143,35 @@ $(document).ready(function () {
         $("#divPortfolio").css("display", "none");
         $("#divContato").css("display", "");
     }
+    //#endregion [Display sessões]
+
+    //#region [Display botões]
+    $("#btnEducacao").click(function() {
+        $("#btnEducacao").addClass("ativo");
+        $("#btnExperiencia").removeClass("ativo");
+        $("#btnHabilidades").removeClass("ativo");
+
+        $("#sessaoEducacao").css("display", "");
+        $("#sessaoExperiencia").css("display", "none");
+        $("#sessaoHabilidades").css("display", "none");
+    });
+    $("#btnExperiencia").click(function() {
+        $("#btnExperiencia").addClass("ativo");
+        $("#btnEducacao").removeClass("ativo");
+        $("#btnHabilidades").removeClass("ativo");
+
+        $("#sessaoEducacao").css("display", "none");
+        $("#sessaoExperiencia").css("display", "");
+        $("#sessaoHabilidades").css("display", "none");
+    });
+    $("#btnHabilidades").click(function() {
+        $("#btnHabilidades").addClass("ativo");
+        $("#btnEducacao").removeClass("ativo");
+        $("#btnExperiencia").removeClass("ativo");
+
+        $("#sessaoEducacao").css("display", "none");
+        $("#sessaoExperiencia").css("display", "none");
+        $("#sessaoHabilidades").css("display", "");
+    });
+    //#endregion [Display botões]
 });
