@@ -265,6 +265,42 @@
             margin-left: 42px;
         }
         
+        .cardEducacao .nomeHabilidades {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 14px;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+        
+        .cardEducacao .nomeCurso {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 14px;
+            display: block;
+        }
+        
+        .cardEducacao .progress {
+            margin-top: 30px;
+        }
+        
+        .cardEducacao .bg-danger {
+            background-color: #da062c!important
+        }
+        
+        .cardEducacao .valorProgressBar {
+            box-shadow: #87878752 1px 1px 1px 1px;
+            padding: 8px;
+            font-weight: bold;
+            left: 21%;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #333;
+            position: absolute;
+        }
+        
         .acessarSite {
             font-size: 13px;
             float: right;
