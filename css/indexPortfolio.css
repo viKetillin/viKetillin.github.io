@@ -306,6 +306,11 @@
             float: right;
             margin-top: 3px;
             cursor: pointer;
+            color: #007bff;
+        }
+        
+        .acessarSite:hover {
+            color: #0063cc;
         }
         
         a {
