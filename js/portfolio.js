@@ -85,7 +85,7 @@ function onMouseWheel(event) {
 
 $(document).ready(function() {
     $("#sidebar").append(
-        '<nav style="position: absolute; left: 0; z-index: 1;">' +
+        '<nav>' +
         '<div class="imgPortfolio">' +
         '<img src="img/eu.png" alt="Minha foto com um cachorro">' +
         '</div>' +
