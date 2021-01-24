@@ -106,6 +106,11 @@ $(document).ready(function() {
         '</nav>'
     );
 
+    $('#hamburger').click(function() {
+        $(this).toggleClass('open');
+        $("nav").slideToggle(6000);
+    });
+
     //#region [Display sessões]
     if (parseInt(codigoNav) == 0 || codigoNav == null) {
         $("#navInicio").addClass("active");
