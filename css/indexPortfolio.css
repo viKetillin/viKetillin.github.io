@@ -270,6 +270,11 @@
                 margin-left: 42px;
             }
             
+            .paddingPorfolio {
+                padding: 30px 100px 0px 330px;
+                margin: 0 auto;
+            }
+            
             .cardEducacao .nomeHabilidades {
                 font-size: 26px;
                 font-weight: bold;
@@ -457,6 +462,9 @@
                     padding: 30px 100px 0px 50px;
                     margin: 0 auto;
                 }
+                .paddingPorfolio {
+                    padding: 30px 0px 0px 50px;
+                }
             }
             
             @media(min-width:376px) and (max-width:425px) {
@@ -474,6 +482,9 @@
                 #divSobre .div {
                     padding: 30px 100px 0px 30px;
                     margin: 0 auto;
+                }
+                .paddingPorfolio {
+                    padding: 30px 0px 0px 30px;
                 }
             }
             
@@ -493,6 +504,9 @@
                     padding: 30px 100px 0px 30px;
                     margin: 0 auto;
                 }
+                .paddingPorfolio {
+                    padding: 30px 0px 0px 30px;
+                }
             }
             
             @media(max-width:320px) {
@@ -510,5 +524,8 @@
                 #divSobre .div {
                     padding: 30px 100px 0px 30px;
                     margin: 0 auto;
+                }
+                .paddingPorfolio {
+                    padding: 30px 0px 0px 20px;
                 }
             }
