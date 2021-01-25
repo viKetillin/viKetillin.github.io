@@ -108,7 +108,7 @@ $(document).ready(function() {
 
     $('#hamburger').click(function() {
         $(this).toggleClass('open');
-        $("nav").slideToggle(6000);
+        $("nav").slideToggle(900);
     });
 
     //#region [Display sessões]
