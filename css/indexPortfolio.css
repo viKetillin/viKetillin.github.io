@@ -331,6 +331,44 @@
                 color: #fff;
                 text-decoration: none;
             }
+            
+            .paddingDivContato {
+                padding: 30px 100px 0px 330px;
+                margin: 0 auto;
+            }
+            
+            .tituloSessao {
+                display: block;
+                margin-bottom: 30px;
+                font-size: 26px;
+                text-transform: uppercase;
+            }
+            
+            .divBtnContato {
+                margin: auto auto;
+                text-align: center;
+            }
+            
+            .btnWpp {
+                margin-top: 20px;
+                margin-right: 12px;
+                width: 146px;
+                border: 0px solid #fff;
+                color: #fff;
+                background-color: #009714;
+                padding: 8px;
+                border-radius: 3px;
+            }
+            
+            .btnEmail {
+                margin-top: 20px;
+                width: 146px;
+                border: 0px solid #fff;
+                color: #fff;
+                background-color: #DA062C;
+                padding: 8px;
+                border-radius: 3px;
+            }
             /**Hamburger**/
             
             * {
@@ -443,6 +481,10 @@
                 #hamburger {
                     display: none;
                 }
+                .divBtnContato {
+                    margin-top: 30px;
+                    text-align: initial;
+                }
             }
             
             @media(min-width:426px) and (max-width:768px) {
@@ -463,6 +505,12 @@
                 }
                 .paddingPorfolio {
                     padding: 30px 0px 0px 50px;
+                }
+                .paddingDivContato {
+                    padding: 30px 0px 0px 25px;
+                }
+                .divBtnContato {
+                    margin-top: 25px;
                 }
             }
             
@@ -488,6 +536,12 @@
                 .cardPortfolio {
                     width: 92%;
                 }
+                .paddingDivContato {
+                    padding: 30px 0px 0px 25px;
+                }
+                .divBtnContato {
+                    margin-top: 25px;
+                }
             }
             
             @media(min-width:321px) and (max-width:375px) {
@@ -511,6 +565,12 @@
                 }
                 .cardPortfolio {
                     width: 90%;
+                }
+                .paddingDivContato {
+                    padding: 30px 0px 0px 25px;
+                }
+                .divBtnContato {
+                    margin-top: 25px;
                 }
             }
             
@@ -538,5 +598,17 @@
                 }
                 .cardPortfolio {
                     width: 92%;
+                }
+                .paddingDivContato {
+                    padding: 30px 0px 0px 25px;
+                }
+                .divBtnContato {
+                    margin-top: 25px;
+                }
+                .btnWpp {
+                    margin-top: 12px 0px 0px 0px;
+                }
+                .btnEmail {
+                    margin-top: 12px 0px 0px 0px;
                 }
             }

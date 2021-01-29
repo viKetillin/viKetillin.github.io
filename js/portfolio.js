@@ -57,6 +57,11 @@ window.onload = function() {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
+
+    if (screen.width <= 1024) {
+        $(".divInfoContato").removeClass("col-md-6");
+        $(".divInfoContato").addClass("col-md-12");
+    }
 };
 
 var $window = $(window);
