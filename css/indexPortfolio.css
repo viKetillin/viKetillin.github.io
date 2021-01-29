@@ -267,7 +267,6 @@
                 font-size: 14px;
                 color: #666;
                 font-weight: bold;
-                margin-left: 42px;
             }
             
             .paddingPorfolio {
@@ -313,8 +312,8 @@
             
             .acessarSite {
                 font-size: 13px;
-                float: right;
                 margin-top: 3px;
+                margin-left: 20%;
                 cursor: pointer;
                 color: #007bff;
             }
@@ -417,7 +416,7 @@
                 left: 50%;
             }
             
-            @media(min-width:1441px) {
+            @media(min-width:1240px) {
                 .backgroundPortfolio {
                     height: auto;
                     width: 100%;
@@ -427,7 +426,7 @@
                 }
             }
             
-            @media(min-width:1025px) and (max-width:1440px) {
+            @media(min-width:1025px) and (max-width:1239px) {
                 #divInicio div {
                     margin-left: 120px;
                 }
@@ -484,7 +483,10 @@
                     margin: 0 auto;
                 }
                 .paddingPorfolio {
-                    padding: 30px 0px 0px 30px;
+                    padding: 30px 0px 0px 25px;
+                }
+                .cardPortfolio {
+                    width: 92%;
                 }
             }
             
@@ -505,7 +507,10 @@
                     margin: 0 auto;
                 }
                 .paddingPorfolio {
-                    padding: 30px 0px 0px 30px;
+                    padding: 30px 0px 0px 25px;
+                }
+                .cardPortfolio {
+                    width: 90%;
                 }
             }
             
@@ -526,6 +531,12 @@
                     margin: 0 auto;
                 }
                 .paddingPorfolio {
-                    padding: 30px 0px 0px 20px;
+                    padding: 22px 0px 0px 18px;
+                }
+                #hamburger {
+                    top: 28px;
+                }
+                .cardPortfolio {
+                    width: 92%;
                 }
             }
