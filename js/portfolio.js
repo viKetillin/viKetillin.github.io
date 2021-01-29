@@ -62,6 +62,12 @@ window.onload = function() {
         $(".divInfoContato").removeClass("col-md-6");
         $(".divInfoContato").addClass("col-md-12");
     }
+
+    if (screen.width <= 768) {
+        $(".removerCol").removeClass("col-md-1");
+        $(".removerCol").removeClass("col-md-11");
+        $(".removerCol .fas, .removerCol .fab").css("margin-right", "12px");
+    }
 };
 
 var $window = $(window);
