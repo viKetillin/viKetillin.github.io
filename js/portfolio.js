@@ -1,98 +1,7 @@
 var urlString = window.location.href;
 var url = new URL(urlString);
 var codigoNav = url.searchParams.get("codigoNav");
-
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
-
-    setTimeout(function() {
-        that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-            new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-
-    if (screen.width <= 1024) {
-        $(".divInfoContato").removeClass("col-md-6");
-        $(".divInfoContato").addClass("col-md-12");
-    }
-
-    if (screen.width <= 768) {
-        $(".removerCol").removeClass("col-md-1");
-        $(".removerCol").removeClass("col-md-11");
-        $(".removerCol .fas, .removerCol .fab").css("margin-right", "12px");
-    }
-};
-
-var $window = $(window);
-
-$window.on("mousewheel DOMMouseScroll", onMouseWheel);
-
-function onMouseWheel(event) {
-    var delta = event.originalEvent.wheelDelta / 30 || -event.originalEvent.detail;
-
-    if (delta < -1) {
-        var newCodeNav = null;
-        if (parseInt(codigoNav) < 4) {
-            newCodeNav = parseInt(codigoNav) + 1;
-            window.location.href = "index.html?codigoNav=" + newCodeNav;
-        }
-    } else if (delta > 1) {
-        var newCodeNav = null;
-        if (parseInt(codigoNav) > 0) {
-            newCodeNav = parseInt(codigoNav) - 1;
-            window.location.href = "index.html?codigoNav=" + newCodeNav;
-        }
-    }
-    event.preventDefault();
-}
-
+var TxtType = null;
 
 $(document).ready(function() {
     $("#sidebar").append(
@@ -190,4 +99,96 @@ $(document).ready(function() {
         $("#sessaoHabilidades").css("display", "");
     });
     //#endregion [Display botões]
+
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+    }
+
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+
+    if (screen.width <= 1024) {
+        $(".divInfoContato").removeClass("col-md-6");
+        $(".divInfoContato").addClass("col-md-12");
+    }
+
+    if (screen.width <= 768) {
+        $(".removerCol").removeClass("col-md-1");
+        $(".removerCol").removeClass("col-md-11");
+        $(".removerCol .fas, .removerCol .fab").css("margin-right", "12px");
+    }
+
+    if (screen.width >= 768) {
+        var $window = $(window);
+
+        $window.on("mousewheel DOMMouseScroll", onMouseWheel);
+    }
 });
+
+TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+    }
+
+    setTimeout(function() {
+        that.tick();
+    }, delta);
+};
+
+function onMouseWheel(event) {
+    var delta = event.originalEvent.wheelDelta / 30 || -event.originalEvent.detail;
+
+    if (delta < -1) {
+        var newCodeNav = null;
+        if (parseInt(codigoNav) < 4) {
+            newCodeNav = parseInt(codigoNav) + 1;
+            window.location.href = "index.html?codigoNav=" + newCodeNav;
+        }
+    } else if (delta > 1) {
+        var newCodeNav = null;
+        if (parseInt(codigoNav) > 0) {
+            newCodeNav = parseInt(codigoNav) - 1;
+            window.location.href = "index.html?codigoNav=" + newCodeNav;
+        }
+    }
+    event.preventDefault();
+}
