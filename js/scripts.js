@@ -6,127 +6,127 @@ var datasourceCardHTML = null;
 var datasourceCardC = null;
 
 datasourceCardHTML = [{
-    tituloCard: "INTRODUÇÃO",
-    descricaoCard: "Entenderemos o que é HTML (Hypertext Markup Language), sua estrutura e qual é seu objetivo no contexto do desenvolvimento de software.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=0",
-},
-{
-    tituloCard: "TAGS",
-    descricaoCard: "Aqui iremos ver o que são tags e os principais atributos dessas tags.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=1",
-},
-{
-    tituloCard: "META TAGS",
-    descricaoCard: "Aqui encontraremos todas as informações que você precisa saber sobre meta tags.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=2",
-},
-{
-    tituloCard: "ESTRUTURA",
-    descricaoCard: "Aqui veremos a estrutura básica do HTML.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=3",
-},
-{
-    tituloCard: "SEMÂNTICA",
-    descricaoCard: "Entenderemos o significado das informações HTML para páginas da Web.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=4",
-},
-{
-    tituloCard: "TEXTO",
-    descricaoCard: "Nesta parte falarei sobre a formatação de texto no html e meu objetivo é que você entenda como organizar seu conteúdo distribuindo corretamento os títulos, parágrafos, negritos, itálicos, etc de forma semântica.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=5",
-},
-{
-    tituloCard: "LISTAS",
-    descricaoCard: "Nessa parte aprenderemos sobre representações de listas no HTML.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=6",
-},
-{
-    tituloCard: "LINKS",
-    descricaoCard: "Nessa seção encontraremos informações sobre links.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=7",
-},
-{
-    tituloCard: "TABELAS",
-    descricaoCard: "Nessa sessão entenderemos o que são tabelas e como incluir em páginas HTML.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=8",
-},
-{
-    tituloCard: "FORMULÁRIOS",
-    descricaoCard: "Veremos como estruturar um formulário HTML.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=9",
-},
-{
-    tituloCard: "IMAGENS",
-    descricaoCard: "Aqui veremos como inserir imagens em seu web site.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=10",
-},
-{
-    tituloCard: "VIDEO",
-    descricaoCard: "Nessa sessão veremos como inserir vídeos através do HTML em sua página web.",
-    hrefBotao: "tutoriais.html?codigoTutorialURL=11",
-},
+        tituloCard: "INTRODUÇÃO",
+        descricaoCard: "Entenderemos o que é HTML (Hypertext Markup Language), sua estrutura e qual é seu objetivo no contexto do desenvolvimento de software.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=0",
+    },
+    {
+        tituloCard: "TAGS",
+        descricaoCard: "Aqui iremos ver o que são tags e os principais atributos dessas tags.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=1",
+    },
+    {
+        tituloCard: "META TAGS",
+        descricaoCard: "Aqui encontraremos todas as informações que você precisa saber sobre meta tags.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=2",
+    },
+    {
+        tituloCard: "ESTRUTURA",
+        descricaoCard: "Aqui veremos a estrutura básica do HTML.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=3",
+    },
+    {
+        tituloCard: "SEMÂNTICA",
+        descricaoCard: "Entenderemos o significado das informações HTML para páginas da Web.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=4",
+    },
+    {
+        tituloCard: "TEXTO",
+        descricaoCard: "Nesta parte falarei sobre a formatação de texto no html e meu objetivo é que você entenda como organizar seu conteúdo distribuindo corretamento os títulos, parágrafos, negritos, itálicos, etc de forma semântica.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=5",
+    },
+    {
+        tituloCard: "LISTAS",
+        descricaoCard: "Nessa parte aprenderemos sobre representações de listas no HTML.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=6",
+    },
+    {
+        tituloCard: "LINKS",
+        descricaoCard: "Nessa seção encontraremos informações sobre links.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=7",
+    },
+    {
+        tituloCard: "TABELAS",
+        descricaoCard: "Nessa sessão entenderemos o que são tabelas e como incluir em páginas HTML.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=8",
+    },
+    {
+        tituloCard: "FORMULÁRIOS",
+        descricaoCard: "Veremos como estruturar um formulário HTML.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=9",
+    },
+    {
+        tituloCard: "IMAGENS",
+        descricaoCard: "Aqui veremos como inserir imagens em seu web site.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=10",
+    },
+    {
+        tituloCard: "VIDEO",
+        descricaoCard: "Nessa sessão veremos como inserir vídeos através do HTML em sua página web.",
+        hrefBotao: "tutoriais.html?codigoTutorialURL=11",
+    },
 ]
 
 datasourceCardC = [{
-    tituloCard: "Visão geral",
-    descricaoCard: "Nessa sessão veremos uma macrovisão do curso.",
-    hrefBotao: "introducao.html?codigoMateria=1",
-},
-{
-    tituloCard: "TAGS",
-    descricaoCard: "Aqui iremos ver o que são tags e os principais atributos dessas tags.",
-    hrefBotao: "tags.html?codigoMateria=2",
-},
-{
-    tituloCard: "META TAGS",
-    descricaoCard: "Aqui encontraremos todas as informações que você precisa saber sobre meta tags.",
-    hrefBotao: "metaTags.html?codigoMateria=3",
-},
-{
-    tituloCard: "ESTRUTURA",
-    descricaoCard: "Aqui veremos a estrutura básica do HTML.",
-    hrefBotao: "estrutura.html?codigoMateria=4",
-},
-{
-    tituloCard: "SEMÂNTICA",
-    descricaoCard: "Entenderemos o significado das informações HTML para páginas da Web.",
-    hrefBotao: "semantica.html?codigoMateria=5",
-},
-{
-    tituloCard: "TEXTO",
-    descricaoCard: "Nesta parte falarei sobre a formatação de texto no html e meu objetivo é que você entenda como organizar seu conteúdo distribuindo corretamento os títulos, parágrafos, negritos, itálicos, etc de forma semântica.",
-    hrefBotao: "texto.html?codigoMateria=6",
-},
-{
-    tituloCard: "LISTAS",
-    descricaoCard: "Nessa parte aprenderemos sobre representações de listas no HTML.",
-    hrefBotao: "listas.html?codigoMateria=7",
-},
-{
-    tituloCard: "LINKS",
-    descricaoCard: "Nessa seção encontraremos informações sobre links.",
-    hrefBotao: "links.html?codigoMateria=8",
-},
-{
-    tituloCard: "TABELAS",
-    descricaoCard: "Nessa sessão entenderemos o que são tabelas e como incluir em páginas HTML.",
-    hrefBotao: "tabelas.html?codigoMateria=9",
-},
-{
-    tituloCard: "FORMULÁRIOS",
-    descricaoCard: "Veremos como estruturar um formulário HTML.",
-    hrefBotao: "formularios.html?codigoMateria=10",
-},
-{
-    tituloCard: "IMAGENS",
-    descricaoCard: "Aqui veremos como inserir imagens em seu web site.",
-    hrefBotao: "imagens.html?codigoMateria=11",
-},
-{
-    tituloCard: "VIDEO",
-    descricaoCard: "Nessa sessão veremos como inserir vídeos através do HTML em sua página web.",
-    hrefBotao: "video.html?codigoMateria?codigoMateria=12",
-},
+        tituloCard: "Visão geral",
+        descricaoCard: "Nessa sessão veremos uma macrovisão do curso.",
+        hrefBotao: "introducao.html?codigoMateria=1",
+    },
+    {
+        tituloCard: "TAGS",
+        descricaoCard: "Aqui iremos ver o que são tags e os principais atributos dessas tags.",
+        hrefBotao: "tags.html?codigoMateria=2",
+    },
+    {
+        tituloCard: "META TAGS",
+        descricaoCard: "Aqui encontraremos todas as informações que você precisa saber sobre meta tags.",
+        hrefBotao: "metaTags.html?codigoMateria=3",
+    },
+    {
+        tituloCard: "ESTRUTURA",
+        descricaoCard: "Aqui veremos a estrutura básica do HTML.",
+        hrefBotao: "estrutura.html?codigoMateria=4",
+    },
+    {
+        tituloCard: "SEMÂNTICA",
+        descricaoCard: "Entenderemos o significado das informações HTML para páginas da Web.",
+        hrefBotao: "semantica.html?codigoMateria=5",
+    },
+    {
+        tituloCard: "TEXTO",
+        descricaoCard: "Nesta parte falarei sobre a formatação de texto no html e meu objetivo é que você entenda como organizar seu conteúdo distribuindo corretamento os títulos, parágrafos, negritos, itálicos, etc de forma semântica.",
+        hrefBotao: "texto.html?codigoMateria=6",
+    },
+    {
+        tituloCard: "LISTAS",
+        descricaoCard: "Nessa parte aprenderemos sobre representações de listas no HTML.",
+        hrefBotao: "listas.html?codigoMateria=7",
+    },
+    {
+        tituloCard: "LINKS",
+        descricaoCard: "Nessa seção encontraremos informações sobre links.",
+        hrefBotao: "links.html?codigoMateria=8",
+    },
+    {
+        tituloCard: "TABELAS",
+        descricaoCard: "Nessa sessão entenderemos o que são tabelas e como incluir em páginas HTML.",
+        hrefBotao: "tabelas.html?codigoMateria=9",
+    },
+    {
+        tituloCard: "FORMULÁRIOS",
+        descricaoCard: "Veremos como estruturar um formulário HTML.",
+        hrefBotao: "formularios.html?codigoMateria=10",
+    },
+    {
+        tituloCard: "IMAGENS",
+        descricaoCard: "Aqui veremos como inserir imagens em seu web site.",
+        hrefBotao: "imagens.html?codigoMateria=11",
+    },
+    {
+        tituloCard: "VIDEO",
+        descricaoCard: "Nessa sessão veremos como inserir vídeos através do HTML em sua página web.",
+        hrefBotao: "video.html?codigoMateria?codigoMateria=12",
+    },
 ]
 
 if (window.location.pathname == pageHTML) {
@@ -144,10 +144,10 @@ function btnVoltar_onClick() {
     window.history.back();
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     $('#navBar').append(
         '<nav class="navbar navbar-expand-lg navbar-light bg-light">' +
-        '<a class="navbar-brand" href="index.html"><img src="img/logo.png" width="80px;"></a>' +
+        '<a class="navbar-brand" href="indexHTML.html"><img src="img/logo.png" width="80px;"></a>' +
         '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"' +
         'aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">' +
         '<span class="navbar-toggler-icon"></span>' +
@@ -155,7 +155,7 @@ $(document).ready(function () {
         '<div class="collapse navbar-collapse" id="navbarNavDropdown">' +
         '<ul class="navbar-nav">' +
         '<li class="nav-item active">' +
-        '<a class="nav-link" href="index.html">INICIAL <span class="sr-only">(Página atual)</span></a>' +
+        '<a class="nav-link" href="indexHTML.html">INICIAL <span class="sr-only">(Página atual)</span></a>' +
         '</li>' +
         '<li class="nav-item">' +
         '<a class="nav-link" href="#">SOBRE</a>' +
@@ -191,7 +191,7 @@ $(document).ready(function () {
 
     $('#navBarPages').append(
         '<nav class="navbar navbar-expand-lg navbar-light bg-light">' +
-        '<a class="navbar-brand" href="../../index.html"><img src="../../img/logo.png" width="80px;"></a>' +
+        '<a class="navbar-brand" href="../../indexHTML.html"><img src="../../img/logo.png" width="80px;"></a>' +
         '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"' +
         'aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">' +
         '<span class="navbar-toggler-icon"></span>' +
@@ -199,7 +199,7 @@ $(document).ready(function () {
         '<div class="collapse navbar-collapse" id="navbarNavDropdown">' +
         '<ul class="navbar-nav">' +
         '<li class="nav-item active">' +
-        '<a class="nav-link" href="../../index.html">INICIAL <span class="sr-only">(Página atual)</span></a>' +
+        '<a class="nav-link" href="../../indexHTML.html">INICIAL <span class="sr-only">(Página atual)</span></a>' +
         '</li>' +
         '<li class="nav-item">' +
         '<a class="nav-link" href="#">SOBRE</a>' +

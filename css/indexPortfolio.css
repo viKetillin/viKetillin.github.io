@@ -372,6 +372,14 @@
                 padding: 8px;
                 border-radius: 3px;
             }
+            
+            .grupoBtnResumo {
+                display: block;
+            }
+            
+            #dropdownResumo {
+                display: none;
+            }
             /**Hamburger**/
             
             * {
@@ -807,5 +815,11 @@
                 #sessaoExperiencia .col-md-12,
                 #sessaoHabilidades .col-md-12 {
                     display: block !important;
+                }
+                .grupoBtnResumo {
+                    display: none;
+                }
+                .dropdownResumo {
+                    display: block;
                 }
             }
