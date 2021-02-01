@@ -97,6 +97,13 @@ $(document).ready(function() {
         $("#sessaoEducacao").css("display", "none");
         $("#sessaoExperiencia").css("display", "none");
         $("#sessaoHabilidades").css("display", "");
+
+        for (var i = 0; i < 6; i++) {
+            var tamanhoProgressBar = $(".progress-bar")[i].offsetWidth;
+            var ValorProgressbar = $(".valorProgressBar")[i];
+            $(ValorProgressbar).css("margin-left", (tamanhoProgressBar - 10) + "px");
+        }
+
     });
     //#endregion [Display botões]
 

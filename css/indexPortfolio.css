@@ -301,7 +301,6 @@
                 box-shadow: #87878752 1px 1px 1px 1px;
                 padding: 8px;
                 font-weight: bold;
-                left: 21%;
                 width: 35px;
                 height: 35px;
                 border-radius: 50%;
@@ -413,6 +412,11 @@
                 -o-transition: .25s ease-in-out;
                 transition: .25s ease-in-out;
             }
+            
+            .paddingResumo {
+                padding: 30px 100px 0px 330px;
+                margin: 0 auto;
+            }
             /* Icon 3 */
             
             #hamburger span:nth-child(1) {
@@ -471,6 +475,10 @@
                 #hamburger {
                     display: none;
                 }
+                .cardEducacao .nomeHabilidades {
+                    font-size: 18px;
+                    margin-left: 2px;
+                }
             }
             
             @media(min-width:769px) and (max-width:1024px) {
@@ -484,6 +492,21 @@
                 .divBtnContato {
                     margin-top: 30px;
                     text-align: initial;
+                }
+                .cardEducacao .nomeHabilidades {
+                    font-size: 18px;
+                    display: block;
+                    margin: 0;
+                    text-align: center;
+                }
+                .cardEducacao img,
+                .cardEducacao svg {
+                    margin: 0 auto;
+                    display: block;
+                }
+                .paddingResumo {
+                    padding: 30px 100px 0px 270px;
+                    margin: 0 auto;
                 }
             }
             
@@ -511,6 +534,21 @@
                 }
                 .divBtnContato {
                     margin-top: 25px;
+                }
+                .cardEducacao .nomeHabilidades {
+                    font-size: 18px;
+                    display: block;
+                    margin: 0;
+                    text-align: center;
+                }
+                .cardEducacao img,
+                .cardEducacao svg {
+                    margin: 0 auto;
+                    display: block;
+                }
+                .paddingResumo {
+                    padding: 30px 0px 0px 50px;
+                    margin: 0 auto;
                 }
             }
             
@@ -542,6 +580,21 @@
                 .divBtnContato {
                     margin-top: 25px;
                 }
+                .cardEducacao .nomeHabilidades {
+                    font-size: 18px;
+                    display: block;
+                    margin: 0;
+                    text-align: center;
+                }
+                .cardEducacao img,
+                .cardEducacao svg {
+                    margin: 0 auto;
+                    display: block;
+                }
+                .paddingResumo {
+                    padding: 30px 0px 0px 20px;
+                    margin: 0 auto;
+                }
             }
             
             @media(min-width:321px) and (max-width:375px) {
@@ -571,6 +624,31 @@
                 }
                 .divBtnContato {
                     margin-top: 25px;
+                }
+                .cardEducacao .nomeHabilidades {
+                    font-size: 18px;
+                    display: block;
+                    margin: 0;
+                    text-align: center;
+                }
+                .cardEducacao img,
+                .cardEducacao svg {
+                    display: none;
+                }
+                .cardEducacao .nomeHabilidades {
+                    font-size: 18px;
+                    display: block;
+                    margin: 0;
+                    text-align: center;
+                }
+                .cardEducacao img,
+                .cardEducacao svg {
+                    margin: 0 auto;
+                    display: block;
+                }
+                .paddingResumo {
+                    padding: 30px 0px 0px 20px;
+                    margin: 0 auto;
                 }
             }
             
@@ -610,5 +688,30 @@
                 }
                 .btnEmail {
                     margin-top: 12px 0px 0px 0px;
+                }
+                .cardEducacao .nomeHabilidades {
+                    font-size: 18px;
+                    display: block;
+                    margin: 0;
+                    text-align: center;
+                }
+                .cardEducacao img,
+                .cardEducacao svg {
+                    display: none;
+                }
+                .cardEducacao .nomeHabilidades {
+                    font-size: 18px;
+                    display: block;
+                    margin: 0;
+                    text-align: center;
+                }
+                .cardEducacao img,
+                .cardEducacao svg {
+                    margin: 0 auto;
+                    display: block;
+                }
+                .paddingResumo {
+                    padding: 30px 0px 0px 20px;
+                    margin: 0 auto;
                 }
             }
