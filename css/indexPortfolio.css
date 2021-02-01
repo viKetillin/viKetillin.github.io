@@ -417,6 +417,10 @@
                 padding: 30px 100px 0px 330px;
                 margin: 0 auto;
             }
+            
+            #divContato {
+                overflow: hidden;
+            }
             /* Icon 3 */
             
             #hamburger span:nth-child(1) {
