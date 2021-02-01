@@ -141,12 +141,61 @@ var cardsMetaTagsHTML = [{
     }
 ]
 
+var cardsTagsSemanticas = [{
+        codigoCardTag: 0,
+        titulo: "header",
+        descricao: "O <strong>&lt;header&gt</strong>; é utilizado para representar o cabeçalho de um documento ou seção declarado no HTML. Nele podemos inserir elementos de &lt;h1&gt; a &lt;h6&gt;, até elementos para representar imagens, parágrafos ou mesmo listas de navegação."
+    },
+    {
+        codigoCardTag: 1,
+        titulo: "section",
+        descricao: "O elemento <strong>&lt;section&gt;</strong> representa uma seção dentro de um documento e geralmente contém um título, o qual é definido por meio de um dos elementos entre &lt;h1&gt; e &lt;h6&gt;. Podemos utilizar o &lt;section&gt;, por exemplo, para descrever as seções/tópicos de um documento."
+    },
+    {
+        codigoCardTag: 2,
+        titulo: "draggable",
+        descricao: "Define se um elemento é arrastável ou não."
+    },
+    {
+        codigoCardTag: 3,
+        titulo: "hidden",
+        descricao: "Oculta o elemento onde for declarado."
+    },
+    {
+        codigoCardTag: 4,
+        titulo: "id",
+        descricao: "É o identificador único do elemento. Somente deve ser declarado um id por elemento. E este id não deve ser repetido na mesma página."
+    },
+    {
+        codigoCardTag: 5,
+        titulo: "lang",
+        descricao: "Determina o idioma em que está escrito o conteúdo do elemento."
+    },
+    {
+        codigoCardTag: 6,
+        titulo: "style",
+        descricao: "Determina propriedades CSS diretamente no elemento."
+    },
+    {
+        codigoCardTag: 7,
+        titulo: "tabindex",
+        descricao: "Organiza os elementos por ordem de tabulação. Deve-se usar valor numérico."
+    },
+    {
+        codigoCardTag: 8,
+        titulo: "title",
+        descricao: "Representa um auxílio ao elemento. Semelhante a dica do elemento."
+    }
+]
+
 var qtdCardTagsHTML = cardsTagsHTML.length;
 var qtdCardMetaTagsHTML = cardsMetaTagsHTML.length;
+var qtdTagsSemanticas = cardTagsSemanticas.length;
 var conteudoCardsTags = null;
 
 var cardTagHtml = [0];
 var cardMetaTagHtml = [0];
+var cardTagsSemanticas = [0];
 
 for (var i = 0; i < qtdCardTagsHTML; i++) {
     cardTagHtml[i] =
@@ -166,6 +215,17 @@ for (var i = 0; i < qtdCardMetaTagsHTML; i++) {
         '</div>' +
         '<div class="card-body">' +
         '<p class="card-text">' + cardsMetaTagsHTML[i].descricao + '</p>' +
+        '</div>' +
+        '</div>'
+}
+
+for (var i = 0; i < qtdTagsSemanticas; i++) {
+    cardTagsSemanticas[i] =
+        '<div class="card mb-3 w-100 shadow">' +
+        '<div class="card-header text-white bg-orange"><dfn class="tituloDefinicao"> ' + cardsTagsSemanticas[i].titulo + ' </dfn>' +
+        '</div>' +
+        '<div class="card-body">' +
+        '<p class="card-text">' + cardsTagsSemanticas[i].descricao + '</p>' +
         '</div>' +
         '</div>'
 }
@@ -208,7 +268,7 @@ var conteudoTutorial = [{
     {
         codigoTutorial: 3,
         paragrafo: [
-            "<p>O documento HTML possui uma estrutura básica, você sempre começará o seu HTML por esse código.Geralmente editores de textos como o visual studio code já tem atalhos para iniciar     essa os documentos HTMLs com essa estrutura automáticamente, não é necessário que você decore ela, mas é bom que memorize. </p>",
+            "<p>O documento HTML possui uma estrutura básica, você sempre começará o seu HTML por esse código.Geralmente editores de textos como o visual studio code já tem atalhos para iniciar     essa os documentos HTMLs com essa estrutura automáticamente, não é necessário que você decore ela, mas é bom que memorize.</p>",
             "<p><strong>Estrutura Básica:</strong></p>",
             "<div class='code' style='line-height: 15pt;'><p>&lt!<span class='rosa'>DOCTYPE html</span>&gt</p><p>&lt<span class='rosa'>html</span> <span class='verde'>lang</span>=<span class='amarelo'>'pt-br'</span>&gt</p><p>&lt<span class='rosa'>head</span>&gt</p><p>&lt<span class='rosa'>title</span>&gtTítulo da página&lt/<span class='rosa'>title</span>&gt</p><p>&lt<span class='rosa'>meta</span><span class='verde'>charset</span>=<span class='amarelo'>'utf-8'</span>/&gt</p><p>&lt/<span class='rosa'>head</span>&gt</p><p>&lt<span class='rosa'>body</span>&gt</p><p> Aqui vai o código HTML que fará seu site aparecer.</p><p>&lt/<span class='rosa'> body </span>&gt</p><p>&lt/<span class='rosa'>html</span>&gt</p></div>",
             "<p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura: </p>",
@@ -226,8 +286,10 @@ var conteudoTutorial = [{
     {
         codigoTutorial: 4,
         paragrafo: [
-            "<p>A Meta Tag, representada pela tag <meta> é uma tag diferenciada das demais por não ter nenhum efeito aparente na página em si, mas sim por ser responsável por ações externas à página, como por exemplo informar à buscadores como Google ou Bing algumas informações a respeito da página, como título e uma breve descrição.</p>",
-            "<h4>Tipos de Meta Tags</h4>", [cardMetaTagHtml],
+            "<p>O HTML semântico tem como objetivo descrever o significado do conteúdo presente em documentos HTML, tornando - o mais claro tanto para programadores quanto para browsers e outras engines que processam essa informação. </p>",
+            "<p> É graças a semântica que sua página vai indexar bem ou não nos buscadores. Não somente por isso, a semântica ajuda na acessibilidade de sua página ou aplicação. </p>",
+            "<p>O Crawler do Google não vai ver se sua página está bonitinha, mas vai ler seu HTML e indexar conforme o conteúdo esteja estruturado. Um leitor de tela também não vai ficar falando pra pessoa com necessidades especiais que determinado botão é uma lixeira ou um xiszinho vermelho, mas vai ler as tags e identificar o que você escreveu no atributo x e falar para o usuário.</p>",
+            "<h4>Principais tags semânticas:</h4>",
         ]
     },
 ]

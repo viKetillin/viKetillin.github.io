@@ -1,172 +1,95 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<div class="textoConteudo">
+    <p>
+        O HTML semântico tem como objetivo descrever o significado do conteúdo presente em documentos HTML, tornando-o mais claro tanto para programadores quanto para browsers e outras engines que processam essa informação. </p>
+    <p> É graças a semântica que sua página vai indexar bem ou não nos buscadores. Não somente por isso, a semântica ajuda na acessibilidade de sua página ou aplicação. </p>
+    <p>O Crawler do Google não vai ver se sua página está bonitinha, mas vai ler seu HTML e indexar conforme o conteúdo esteja estruturado. Um leitor de tela também não vai ficar falando pra pessoa com necessidades especiais que determinado botão é uma lixeira
+        ou um xiszinho vermelho, mas vai ler as tags e identificar o que você escreveu no atributo x e falar para o usuário.
+    </p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <h4>Principais tags semânticas:</h4>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">header</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O <strong>&lt;header&gt</strong>; é utilizado para representar o cabeçalho de um documento ou seção declarado no HTML. Nele podemos inserir elementos de &lt;h1&gt; a &lt;h6&gt;, até elementos para representar imagens, parágrafos ou mesmo listas
+                de navegação.
+            </p>
+        </div>
+    </div>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">section</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O elemento <strong>&lt;section&gt;</strong> representa uma seção dentro de um documento e geralmente contém um título, o qual é definido por meio de um dos elementos entre &lt;h1&gt; e &lt;h6&gt;. Podemos utilizar o &lt;section&gt;, por exemplo,
+                para descrever as seções/tópicos de um documento.</p>
+        </div>
+    </div>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">nav</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O elemento <strong>&lt;nav&gt;</strong> é utilizado quando precisamos representar um agrupamento de links de navegação, que, por sua vez, são criados com os elementos &lt;ul&gt;, &lt;li&gt; e &lt;a&gt;.
+        </div>
+    </div>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">aside</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O elemento <strong>&lt;aside&gt;</strong> é utilizado quando precisamos criar um conteúdo de apoio/adicional ao conteúdo principal. Por exemplo, ao falar de HTML semântico, podemos indicar ao leitor outros conteúdos sobre a linguagem HTML
+                como sugestão de leitura complementar.</p>
+        </div>
+    </div>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">main</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O elemento <strong>&lt;main&gt;</strong> especifica o conteúdo principal e, consequentemente, de maior relevância dentro da página. Para ser considerada bem construída, uma página deve apresentar apenas um conteúdo principal.</p>
+        </div>
+    </div>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">figure</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O elemento <strong>&lt;figure&gt;</strong> é uma marcação de uso específico para a inserção de uma figura. Para incluir a descrição dessa figura, podemos utilizar o elemento &lt;figcaption&gt;.</p>
+        </div>
+    </div>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">footer</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O elemento <strong>&lt;footer&gt;</strong> representa um rodapé de um documento, como a área presente no final de uma página web. Normalmente é utilizado para descrever informações de autoria, como nome e contato do autor, e data de criação
+                do conteúdo.
+            </p>
+        </div>
+    </div>
 
-    <title>Code Lady - Semântica</title>
-
-    <link rel="sortcut icon" href="../../img/logo.png" type="image/x-icon" />
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../../css/navbar.css">
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <script src="../../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../../js/scripts.js"></script>
-</head>
-
-<body>
-
-    <span id="navBarPages"></span>
-    <div class="row">
-
-        <section class="boxVerde">
-            <div class="row">
-                <a href="html5.html" style="text-decoration: none;">
-                    <div class="limitadorConteudo">
-                        <p style="color: rgb(85, 84, 84); font-size: 11px; display: flex;"><i
-                                class="material-icons">arrow_back</i> <span
-                                style="font-weight: bold; margin-top: 4px;">Voltar a Grade</span></p>
-                    </div>
-                </a>
-                <h1 class="tituloPrincipalHtml">SEMÂNTICA</h1>
-                <div class="limitadorConteudo">
-                    <h4>Elementos semânticos do HTML</h4>
-                    <div class="textoConteudo">
-                        <p>
-                            O HTML semântico tem como objetivo descrever o significado do conteúdo presente em
-                            documentos HTML, tornando-o mais claro tanto para programadores quanto para browsers e
-                            outras engines que processam essa informação. </p>
-                        <p> É graças a semântica que sua página vai
-                            indexar bem ou não nos buscadores. Não somente por isso, a semântica ajuda na acessibilidade
-                            de sua página ou aplicação. </p>
-                        <p>O Crawler do Google não vai ver se sua página está bonitinha, mas vai ler seu HTML e indexar
-                            conforme o conteúdo esteja estruturado. Um leitor de tela também não vai ficar falando pra
-                            pessoa com necessidades especiais que determinado botão é uma lixeira ou um xiszinho
-                            vermelho,
-                            mas vai ler as tags e identificar o que você escreveu no atributo x e falar para o usuário.
-                        </p>
-
-                        <h4>Principais tags semânticas:</h4>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">header</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O <strong>&lt;header&gt</strong>; é utilizado para representar o
-                                    cabeçalho de um documento
-                                    ou seção declarado no HTML. Nele podemos inserir elementos de &lt;h1&gt; a
-                                    &lt;h6&gt;, até
-                                    elementos para representar imagens, parágrafos ou mesmo listas de
-                                    navegação.</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">section</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O elemento <strong>&lt;section&gt;</strong> representa uma seção
-                                    dentro de um
-                                    documento e
-                                    geralmente contém um título, o qual é definido por meio de um dos elementos
-                                    entre &lt;h1&gt; e &lt;h6&gt;. Podemos utilizar o &lt;section&gt;, por exemplo, para
-                                    descrever as
-                                    seções/tópicos de um documento.</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">nav</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O elemento <strong>&lt;nav&gt;</strong> é utilizado quando
-                                    precisamos representar um agrupamento de links de navegação, que, por sua vez, são
-                                    criados com os elementos &lt;ul&gt;, &lt;li&gt; e &lt;a&gt;.
-                            </div>
-                        </div>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">aside</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O elemento <strong>&lt;aside&gt;</strong> é utilizado quando
-                                    precisamos criar um conteúdo
-                                    de apoio/adicional ao conteúdo principal. Por exemplo, ao falar de HTML
-                                    semântico, podemos indicar ao leitor outros conteúdos sobre a linguagem HTML
-                                    como sugestão de leitura complementar.</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">main</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O elemento <strong>&lt;main&gt;</strong> especifica o conteúdo
-                                    principal e,
-                                    consequentemente, de maior relevância dentro da página. Para ser considerada bem
-                                    construída, uma página deve apresentar apenas um conteúdo principal.</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">figure</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O elemento <strong>&lt;figure&gt;</strong> é uma marcação de uso
-                                    específico para a
-                                    inserção de uma figura. Para incluir a descrição dessa figura, podemos utilizar
-                                    o elemento &lt;figcaption&gt;.</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">footer</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O elemento <strong>&lt;footer&gt;</strong> representa um rodapé de
-                                    um documento, como a
-                                    área presente no final de uma página web. Normalmente é utilizado para descrever
-                                    informações de autoria, como nome e contato do autor, e data de criação do
-                                    conteúdo.</p>
-                            </div>
-                        </div>
-
-                        <h4>Semântica no nível de texto</h4>
-                        <p>Além da semântica estrutural, o HTML nos permite descrever o significado de um conteúdo em
-                            nível de texto utilizando um conjunto de elementos semânticos. Assim, é possível, por
-                            exemplo, destacar os trechos de texto que devem receber algum tipo de destaque.</p>
+    <h4>Semântica no nível de texto</h4>
+    <p>Além da semântica estrutural, o HTML nos permite descrever o significado de um conteúdo em nível de texto utilizando um conjunto de elementos semânticos. Assim, é possível, por exemplo, destacar os trechos de texto que devem receber algum tipo de
+        destaque.
+    </p>
 
 
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">a</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">A principal função do elemento <strong>&lt;a&gt;</strong> é
-                                    descrever um link, conectando
-                                    os diversos documentos de um site e permitindo a navegação por esse conteúdo.
-                                    Normalmente esses documentos estão relacionados por compartilharem um assunto em
-                                    comum.</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">em</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O elemento <strong>&lt;em&gt;</strong> é utilizado quando desejamos
-                                    enfatizar um trecho ou
-                                    palavra no texto, indicando que ela contribui de forma mais relevante para o
-                                    sentido/compreensão do conteúdo.</p>
-                            </div>
-                        </div>
-                        <div class="card mb-3 w-100 shadow">
-                            <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">strong</dfn>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">O elemento <strong>&lt;strong&gt;</strong> também é utilizado para
-                                    destacar uma parte do
-                                    texto. Sua principal diferença em relação ao elemento <em> é que <em> pode
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">a</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">A principal função do elemento <strong>&lt;a&gt;</strong> é descrever um link, conectando os diversos documentos de um site e permitindo a navegação por esse conteúdo. Normalmente esses documentos estão relacionados por compartilharem um assunto
+                em comum.
+            </p>
+        </div>
+    </div>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">em</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O elemento <strong>&lt;em&gt;</strong> é utilizado quando desejamos enfatizar um trecho ou palavra no texto, indicando que ela contribui de forma mais relevante para o sentido/compreensão do conteúdo.</p>
+        </div>
+    </div>
+    <div class="card mb-3 w-100 shadow">
+        <div class="card-header text-white bg-orange"><dfn class="tituloDefinicao">strong</dfn>
+        </div>
+        <div class="card-body">
+            <p class="card-text">O elemento <strong>&lt;strong&gt;</strong> também é utilizado para destacar uma parte do texto. Sua principal diferença em relação ao elemento <em> é que <em> pode
                                             alterar o propósito de uma frase, como vimos anteriormente.</p>
                             </div>
                         </div>
@@ -193,34 +116,5 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div onclick="btnVoltar_onClick()" class="botao widthMax"
-                            style="margin-top: 20px; display: inline;">
-                            <a href="#" class="btn">Voltar</a>
-                        </div>
-                        <div class="botao widthMax"
-                            style="margin-top: 20px; float: left; display: contents; text-align: right;">
-                            <a href="texto.html" class="btn">Próximo</a>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-
-    <footer>
-        <p> Copyright © Start
-            Code - 2019</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
