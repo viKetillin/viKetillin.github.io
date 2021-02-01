@@ -208,7 +208,7 @@ var conteudoTutorial = [{
     {
         codigoTutorial: 3,
         paragrafo: [
-            "<p>O documento HTML possui uma estrutura básica, você sempre começará o seu HTML por esse código.Geralmente editores de textos como o visual studio code já tem atalhos para iniciar     essa os documentos HTMLs com essa estrutura automáticamente, não é necessário que você decore ela, mas é bom que memorize. < /p>",
+            "<p>O documento HTML possui uma estrutura básica, você sempre começará o seu HTML por esse código.Geralmente editores de textos como o visual studio code já tem atalhos para iniciar     essa os documentos HTMLs com essa estrutura automáticamente, não é necessário que você decore ela, mas é bom que memorize. </p>",
             "<p><strong>Estrutura Básica:</strong></p>",
             "<div class='code' style='line-height: 15pt;'><p>&lt!<span class='rosa'>DOCTYPE html</span>&gt</p><p>&lt<span class='rosa'>html</span> <span class='verde'>lang</span>=<span class='amarelo'>'pt-br'</span>&gt</p><p>&lt<span class='rosa'>head</span>&gt</p><p>&lt<span class='rosa'>title</span>&gtTítulo da página&lt/<span class='rosa'>title</span>&gt</p><p>&lt<span class='rosa'>meta</span><span class='verde'>charset</span>=<span class='amarelo'>'utf-8'</span>/&gt</p><p>&lt/<span class='rosa'>head</span>&gt</p><p>&lt<span class='rosa'>body</span>&gt</p><p> Aqui vai o código HTML que fará seu site aparecer.</p><p>&lt/<span class='rosa'> body </span>&gt</p><p>&lt/<span class='rosa'>html</span>&gt</p></div>",
             "<p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura: </p>",
@@ -221,6 +221,13 @@ var conteudoTutorial = [{
             "<p><strong>&ltbody&gt</strong> e <strong>&lt/body&gt</strong>.</p>",
             "<p>Este é o preceito básico que deve estar muito bem claro para você: onde as marcações se aplicam, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento.</p>",
             "<p>Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p>"
+        ]
+    },
+    {
+        codigoTutorial: 4,
+        paragrafo: [
+            "<p>A Meta Tag, representada pela tag <meta> é uma tag diferenciada das demais por não ter nenhum efeito aparente na página em si, mas sim por ser responsável por ações externas à página, como por exemplo informar à buscadores como Google ou Bing algumas informações a respeito da página, como título e uma breve descrição.</p>",
+            "<h4>Tipos de Meta Tags</h4>", [cardMetaTagHtml],
         ]
     },
 ]
