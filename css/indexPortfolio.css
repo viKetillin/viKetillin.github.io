@@ -12,6 +12,10 @@
                 z-index: 1;
             }
             
+            #divResumo .row {
+                padding: 0;
+            }
+            
             .imgPortfolio {
                 text-align: center;
                 margin-bottom: 20px;
@@ -509,8 +513,21 @@
                     display: block;
                 }
                 .paddingResumo {
-                    padding: 30px 100px 0px 270px;
+                    padding: 30px 30px 0px 270px;
                     margin: 0 auto;
+                }
+                .btnResumo {
+                    margin-right: 5px;
+                    width: 125px;
+                }
+                .btnResumo.ativo {
+                    width: 125px;
+                }
+                .cardEducacao .nomeCurso {
+                    font-size: 16px;
+                }
+                .cardEducacao .nomeInstituicao {
+                    font-size: 15px;
                 }
             }
             
@@ -550,9 +567,25 @@
                     margin: 0 auto;
                     display: block;
                 }
+                .cardEducacao .nomeCurso {
+                    font-size: 16px;
+                }
+                .cardEducacao .nomeInstituicao {
+                    font-size: 15px;
+                }
                 .paddingResumo {
-                    padding: 30px 0px 0px 50px;
+                    padding: 30px 3% 0px 3%;
                     margin: 0 auto;
+                }
+                .btnResumo {
+                    margin-right: 5px;
+                    width: 125px;
+                }
+                .btnResumo.ativo {
+                    width: 125px;
+                }
+                .cardEducacao {
+                    height: 200px;
                 }
             }
             
@@ -596,8 +629,27 @@
                     display: block;
                 }
                 .paddingResumo {
-                    padding: 30px 0px 0px 20px;
+                    padding: 30px 3% 0px 3%;
                     margin: 0 auto;
+                }
+                .btnResumo {
+                    margin-right: 5px;
+                    width: 120px;
+                }
+                .btnResumo.ativo {
+                    width: 120px;
+                }
+                .cardEducacao {
+                    height: 200px;
+                    width: 95%;
+                }
+                .spanResumo {
+                    font-size: 24px;
+                }
+                #sessaoEducacao .col-md-12,
+                #sessaoExperiencia .col-md-12,
+                #sessaoHabilidades .col-md-12 {
+                    display: block !important;
                 }
             }
             
@@ -651,8 +703,27 @@
                     display: block;
                 }
                 .paddingResumo {
-                    padding: 30px 0px 0px 20px;
+                    padding: 30px 3% 0px 3%;
                     margin: 0 auto;
+                }
+                .btnResumo {
+                    margin-right: 3px;
+                    width: 110px;
+                }
+                .btnResumo.ativo {
+                    width: 110px;
+                }
+                .cardEducacao {
+                    height: 200px;
+                    width: 95%;
+                }
+                .spanResumo {
+                    font-size: 20px;
+                }
+                #sessaoEducacao .col-md-12,
+                #sessaoExperiencia .col-md-12,
+                #sessaoHabilidades .col-md-12 {
+                    display: block !important;
                 }
             }
             
@@ -715,7 +786,26 @@
                     display: block;
                 }
                 .paddingResumo {
-                    padding: 30px 0px 0px 20px;
+                    padding: 30px 3% 0px 3%;
                     margin: 0 auto;
+                }
+                .btnResumo {
+                    margin-right: 5px;
+                    width: 120px;
+                }
+                .btnResumo.ativo {
+                    width: 120px;
+                }
+                .cardEducacao {
+                    height: 200px;
+                    width: 95%;
+                }
+                .spanResumo {
+                    font-size: 24px;
+                }
+                #sessaoEducacao .col-md-12,
+                #sessaoExperiencia .col-md-12,
+                #sessaoHabilidades .col-md-12 {
+                    display: block !important;
                 }
             }
