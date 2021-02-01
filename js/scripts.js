@@ -170,7 +170,6 @@ $(document).ready(function() {
         '</a>' +
         '<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">' +
         '<a class="dropdown-item" href="paginas/html5/html5.html">HTML5</a>' +
-        '<a class="dropdown-item" href="#">CSS3</a>' +
         '<a class="dropdown-item" href="#">JAVASCRIPT</a>' +
         '</div>' +
         '</li>' +
@@ -180,8 +179,8 @@ $(document).ready(function() {
         'BACK-END' +
         '</a>' +
         '<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">' +
-        '<a class="dropdown-item" href="#">MySQL</a>' +
         '<a class="dropdown-item" href="paginas/c/c.html">C#</a>' +
+        '<a class="dropdown-item" href="#">SQL</a>' +
         '</div>' +
         '</li>' +
         '</ul>' +
