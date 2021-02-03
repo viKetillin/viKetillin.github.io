@@ -190,7 +190,7 @@ var cardsTagsSemanticas = [{
 
 var qtdCardTagsHTML = cardsTagsHTML.length;
 var qtdCardMetaTagsHTML = cardsMetaTagsHTML.length;
-var qtdTagsSemanticas = cardTagsSemanticas.length;
+var qtdTagsSemanticas = cardsTagsSemanticas.length;
 var conteudoCardsTags = null;
 
 var cardTagHtml = [0];
