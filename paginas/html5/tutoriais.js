@@ -290,6 +290,7 @@ var conteudoTutorial = [{
             "<p> É graças a semântica que sua página vai indexar bem ou não nos buscadores. Não somente por isso, a semântica ajuda na acessibilidade de sua página ou aplicação. </p>",
             "<p>O Crawler do Google não vai ver se sua página está bonitinha, mas vai ler seu HTML e indexar conforme o conteúdo esteja estruturado. Um leitor de tela também não vai ficar falando pra pessoa com necessidades especiais que determinado botão é uma lixeira ou um xiszinho vermelho, mas vai ler as tags e identificar o que você escreveu no atributo x e falar para o usuário.</p>",
             "<h4>Principais tags semânticas:</h4>",
+            cardTagsSemanticas,
         ]
     },
 ]
