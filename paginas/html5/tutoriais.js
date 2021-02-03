@@ -322,7 +322,8 @@ var conteudoTutorial = [{
             "<h4>Principais tags semânticas:</h4>",
             cardTagsSemanticas,
             "<h4>Semântica no nível de texto</h4>",
-            "<p>Além da semântica estrutural, o HTML nos permite descrever o significado de um conteúdo em nível de texto utilizando um conjunto de elementos semânticos. Assim, é possível, por exemplo, destacar os trechos de texto que devem receber algum tipo de destaque. </p>"
+            "<p>Além da semântica estrutural, o HTML nos permite descrever o significado de um conteúdo em nível de texto utilizando um conjunto de elementos semânticos. Assim, é possível, por exemplo, destacar os trechos de texto que devem receber algum tipo de destaque. </p>",
+            cardsTagsSemanticasTexto
         ]
     },
 ]
