@@ -153,49 +153,68 @@ var cardsTagsSemanticas = [{
     },
     {
         codigoCardTag: 2,
-        titulo: "draggable",
-        descricao: "Define se um elemento é arrastável ou não."
+        titulo: "nav",
+        descricao: "O elemento <strong>&lt;nav&gt;</strong> é utilizado quando precisamos representar um agrupamento de links de navegação, que, por sua vez, são criados com os elementos &lt;ul&gt;, &lt;li&gt; e &lt;a&gt;."
     },
     {
         codigoCardTag: 3,
-        titulo: "hidden",
-        descricao: "Oculta o elemento onde for declarado."
+        titulo: "aside",
+        descricao: "O elemento <strong>&lt;aside&gt;</strong> é utilizado quando precisamos criar um conteúdo de apoio/adicional ao conteúdo principal. Por exemplo, ao falar de HTML semântico, podemos indicar ao leitor outros conteúdos sobre a linguagem HTML como sugestão de leitura complementar."
     },
     {
         codigoCardTag: 4,
-        titulo: "id",
-        descricao: "É o identificador único do elemento. Somente deve ser declarado um id por elemento. E este id não deve ser repetido na mesma página."
+        titulo: "main",
+        descricao: "O elemento <strong>&lt;main&gt;</strong> especifica o conteúdo principal e, consequentemente, de maior relevância dentro da página. Para ser considerada bem construída, uma página deve apresentar apenas um conteúdo principal."
     },
     {
         codigoCardTag: 5,
-        titulo: "lang",
-        descricao: "Determina o idioma em que está escrito o conteúdo do elemento."
+        titulo: "figure",
+        descricao: "O elemento <strong>&lt;figure&gt;</strong> é uma marcação de uso específico para a inserção de uma figura. Para incluir a descrição dessa figura, podemos utilizar o elemento &lt;figcaption&gt;."
     },
     {
         codigoCardTag: 6,
-        titulo: "style",
-        descricao: "Determina propriedades CSS diretamente no elemento."
+        titulo: "footer",
+        descricao: "O elemento <strong>&lt;footer&gt;</strong> representa um rodapé de um documento, como a área presente no final de uma página web. Normalmente é utilizado para descrever informações de autoria, como nome e contato do autor, e data de criação do conteúdo."
+    },
+]
+
+var cardsTagsSemanticasTexto = [{
+        codigoCardTag: 0,
+        titulo: "a",
+        descricao: "A principal função do elemento <strong>&lt;a&gt;</strong> é descrever um link, conectando os diversos documentos de um site e permitindo a navegação por esse conteúdo. Normalmente esses documentos estão relacionados por compartilharem um assunto em comum."
     },
     {
-        codigoCardTag: 7,
-        titulo: "tabindex",
-        descricao: "Organiza os elementos por ordem de tabulação. Deve-se usar valor numérico."
+        codigoCardTag: 1,
+        titulo: "em",
+        descricao: "O elemento <strong>&lt;em&gt;</strong> é utilizado quando desejamos enfatizar um trecho ou palavra no texto, indicando que ela contribui de forma mais relevante para o sentido/compreensão do conteúdo."
     },
     {
-        codigoCardTag: 8,
-        titulo: "title",
-        descricao: "Representa um auxílio ao elemento. Semelhante a dica do elemento."
-    }
+        codigoCardTag: 2,
+        titulo: "strong",
+        descricao: "O elemento <strong>&lt;strong&gt;</strong> também é utilizado para destacar uma parte do texto. Sua principal diferença em relação ao elemento <em> é que <em> pode alterar o propósito de uma frase, como vimos anteriormente."
+    },
+    {
+        codigoCardTag: 3,
+        titulo: "cite e q",
+        descricao: "O elemento <strong>&lt;cite&gt;</strong> é utilizado para declarar que naquele trecho há uma citação, isto é, um trecho de texto que não foi escrito pelo autor do conteúdo.Normalmente utiliza-se o <cite> em conjunto com o elemento<q>,responsável por apresentar o conteúdo retirado de outra fonte."
+    },
+    {
+        codigoCardTag: 4,
+        titulo: "time",
+        descricao: "O elemento <strong>&lt;time&gt;</strong> é utilizado para representar datas.Assim, caso seja necessário informar a data em que um conteúdo foi escrito, podemos declarar a tag & lt;time & gt;e acrescentar a ela o atributo datetime para escrever a data de forma padronizada."
+    },
 ]
 
 var qtdCardTagsHTML = cardsTagsHTML.length;
 var qtdCardMetaTagsHTML = cardsMetaTagsHTML.length;
 var qtdTagsSemanticas = cardsTagsSemanticas.length;
+var qtdTagsSemanticasTexto = cardsTagsSemanticasTexto.length;
 var conteudoCardsTags = null;
 
 var cardTagHtml = [0];
 var cardMetaTagHtml = [0];
 var cardTagsSemanticas = [0];
+var cardTagsSemanticasTexto = [0];
 
 for (var i = 0; i < qtdCardTagsHTML; i++) {
     cardTagHtml[i] =
@@ -226,6 +245,17 @@ for (var i = 0; i < qtdTagsSemanticas; i++) {
         '</div>' +
         '<div class="card-body">' +
         '<p class="card-text">' + cardsTagsSemanticas[i].descricao + '</p>' +
+        '</div>' +
+        '</div>'
+}
+
+for (var i = 0; i < qtdTagsSemanticasTexto; i++) {
+    cardTagsSemanticasTexto[i] =
+        '<div class="card mb-3 w-100 shadow">' +
+        '<div class="card-header text-white bg-orange"><dfn class="tituloDefinicao"> ' + cardsTagsSemanticasTexto[i].titulo + ' </dfn>' +
+        '</div>' +
+        '<div class="card-body">' +
+        '<p class="card-text">' + cardsTagsSemanticasTexto[i].descricao + '</p>' +
         '</div>' +
         '</div>'
 }
@@ -291,6 +321,8 @@ var conteudoTutorial = [{
             "<p>O Crawler do Google não vai ver se sua página está bonitinha, mas vai ler seu HTML e indexar conforme o conteúdo esteja estruturado. Um leitor de tela também não vai ficar falando pra pessoa com necessidades especiais que determinado botão é uma lixeira ou um xiszinho vermelho, mas vai ler as tags e identificar o que você escreveu no atributo x e falar para o usuário.</p>",
             "<h4>Principais tags semânticas:</h4>",
             cardTagsSemanticas,
+            "<h4>Semântica no nível de texto</h4>",
+            "<p>Além da semântica estrutural, o HTML nos permite descrever o significado de um conteúdo em nível de texto utilizando um conjunto de elementos semânticos. Assim, é possível, por exemplo, destacar os trechos de texto que devem receber algum tipo de destaque. </p>"
         ]
     },
 ]
