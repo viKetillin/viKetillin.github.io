@@ -201,7 +201,7 @@ var cardsTagsSemanticasTexto = [{
     {
         codigoCardTag: 4,
         titulo: "time",
-        descricao: "O elemento <strong>&lt;time&gt;</strong> é utilizado para representar datas.Assim, caso seja necessário informar a data em que um conteúdo foi escrito, podemos declarar a tag & lt;time & gt;e acrescentar a ela o atributo datetime para escrever a data de forma padronizada."
+        descricao: "O elemento <strong>&lt;time&gt;</strong> é utilizado para representar datas.Assim, caso seja necessário informar a data em que um conteúdo foi escrito, podemos declarar a tag &lt;time&gt;e acrescentar a ela o atributo datetime para escrever a data de forma padronizada."
     },
 ]
 
