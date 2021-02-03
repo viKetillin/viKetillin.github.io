@@ -196,7 +196,7 @@ var cardsTagsSemanticasTexto = [{
     {
         codigoCardTag: 3,
         titulo: "cite e q",
-        descricao: "O elemento <strong>&lt;cite&gt;</strong> é utilizado para declarar que naquele trecho há uma citação, isto é, um trecho de texto que não foi escrito pelo autor do conteúdo.Normalmente utiliza-se o <cite> em conjunto com o elemento<q>,responsável por apresentar o conteúdo retirado de outra fonte."
+        descricao: "O elemento <strong>&lt;cite&gt;</strong> é utilizado para declarar que naquele trecho há uma citação, isto é, um trecho de texto que não foi escrito pelo autor do conteúdo.Normalmente utiliza-se o &lt;cite&gt; em conjunto com o elemento &lt;q&gt;,responsável por apresentar o conteúdo retirado de outra fonte."
     },
     {
         codigoCardTag: 4,
