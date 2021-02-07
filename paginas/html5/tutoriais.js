@@ -205,16 +205,40 @@ var cardsTagsSemanticasTexto = [{
     },
 ]
 
+var cardsTagsTexto = [{
+        codigoCardTag: 0,
+        titulo: "Tag de título",
+        descricao: "<p class='card-text'>Existem 6 tipos de títulos diferentes em html classificados pelo tamanho de fonte que vão desde <strong>&lt;h1&gt;&lt;/h1&gt;</strong> até<strong>&lt;h6&gt; &lt;/h6&gt</strong>.<div class='code' style='line-height: 15pt; padding-bottom:1px; padding-top:5px;'><p style='margin-top:10px;'>&lt;<span class='rosa'>h1</span>&gt; &lt;/<span class='rosa'>h1</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h2</span>&gt; &lt;/<span class='rosa'>h2</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h3</span>&gt; &lt;/<span class='rosa'>h3</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h4</span>&gt; &lt;/<span class='rosa'>h4</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h5</span>&gt; &lt;/<span class='rosa'>h5</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h6</span>&gt; &lt;/<span class='rosa'>h6</span>&gt;</p></div><p>Motores de busca utilizam os títulos, ou seja, as tags de título para indexar a estrutura e a organização do conteúdo dos sites.</p><p>Essa estrutura indexada segue o padrão: &lt;h1&gt; para os títulos principais, &lt;h2&gt; para os subtítulos, &lt;h3&gt; para os subtítulos dos subtítulos e contínua seguindo essa ordem do mais importante ao menos importante.</p><p><strong>Dica:</strong> Use as tags de título somenta para títulos, jamais pela formatação da fonte!</p></p>"
+    },
+    {
+        codigoCardTag: 1,
+        titulo: "Tag de parágrafo",
+        descricao: "<p class='card-text'>A tag que representa um parágrafo dentro do html é a tag<b>&lt;p&gt;</b><b>&lt;/p&gt;</b>.<div class='code' style='line-height: 15pt; padding-bottom:1px; padding-top:5px;'><p style='margin-top:10px;'>&lt;<span class='rosa'>p</span>&gt; Páragrafo aqui! &lt;/<span class='rosa'>p</span>&gt;</p></div><p><strong>Observação:</strong> A tag de parágrafo remove todos os espaços adicionais, por isso para colocar espaços em brancos propositalmente, não adianta apenas utilizar espaço, você deve ou criar um estilo para adicionar o espaço ou utilizar a entidade &nbsp; do html.</p></p>"
+    },
+    {
+        codigoCardTag: 2,
+        titulo: "Quebra de linha",
+        descricao: "<p class='card-text'><p>Para quebrar linhas utilizamos a tag <b>&lt;/br&gt;</b>.</p><p>Existe também a tag &lt;hr&gt;&lt;/hr&gt; que em adicional a quebra de linha, ela cria um desenho de uma linha horizontal indicando o fim da seção.</p></p>"
+    },
+    {
+        codigoCardTag: 3,
+        titulo: "Tags de formatação de textos",
+        descricao: "<p class='card-text'><p>A tag <b>&lt;b&gt;&lt;/b&gt;</b> é utilizado para deixar o texto em negrito, apenas por questão de estilização.</p><p>A tag <b>&lt;strong&gt;&lt;/strong&gt;</b> tem o mesmo efeito que a tag b visualmente, mas ela serve espeficicamente para ênfatizar o conteúdo do texto que está dentro dela.</p><p>A tag <b>&lt;i&gt;&lt;/i&gt;</b> serve para deixar o texto em itálico, não tem efeito algum na semântica.</p><p>Outra tag que deixa o texto em itálico é a tag <b>&lt;em&gt;&lt;/em&gt;</b>, mas diferente da tag i ela serve vai além de deixar apenas o texto em itálico, ela serve também para dar ênfase ao texto.</p><p>A tag <b>&lt;ins&gt;&lt;/ins&gt;</b> mostra que um texto foi inserido na página.</p><p>Em conjunto com a tag <b>&lt;cite&gt;&lt;/cite&gt;</b> é utilizado a tag &lt;blockquote&gt;&lt;/blockquote&gt; ou a tag &lt;q&gt;&lt;/q&gt; para inserir citações, a tag &lt;blockquote&gt;&lt;/blockquote&gt; para citaçõesmaiores e a tag &lt;q&gt;&lt;/q&gt; para citações menores.</p><p>A tag <b>&lt;abbr&gt;&lt;/abbr&gt;</b> apresenta abreviações, juntamente com a forma completa.</p><p>A tag <b>&lt;address&gt;&lt;/address&gt;</b> serve para especificar as informações de contato do autor/proprietário de um documento ou artigo</p><p>Essa é uma tag de definição <b>&lt;dfn&gt;&lt;/dfn&gt;</b>, ela serve para descrever algum conteúdo, por exemplo, no contexto de um dicionário você usaria da seguinte forma<b>&lt;dfn&gt;Pneumoultramicroscopicossilicovulcanoconiótico&lt;/dfn&gt;</b> Indica alguém ou algo relacionado com uma doença aguda nos pulmões que se origina com a inalação de cinzas vulcânicas.</p><p>A tag <b>&lt;code&gt;&lt;/code&gt;</b> serve para apresentar trechos de códigos dentro de um parágrafo.</p><p>A tag <b>&lt;sub&gt;&lt;/sub&gt;</b> serve para deixar um texto subscrito. Exemplo: H<sub>2</sub>O = Água</p><p>A tag <b>&lt;sup&gt;&lt;/sup&gt;</b> serve para deixar um texto sobscrito. Exemplo 2<sup>2</sup> = 4</p><p>A tag <b>&lt;small&gt;&lt;/small&gt;</b> reduz o tamanho do texto, o objetivo é referir informações redundantes ou inválidas.</p></p>"
+    }
+]
+
 var qtdCardTagsHTML = cardsTagsHTML.length;
 var qtdCardMetaTagsHTML = cardsMetaTagsHTML.length;
 var qtdTagsSemanticas = cardsTagsSemanticas.length;
 var qtdTagsSemanticasTexto = cardsTagsSemanticasTexto.length;
+var qtdTagsTexto = cardsTagsSemanticasTexto.length;
 var conteudoCardsTags = null;
 
 var cardTagHtml = [0];
 var cardMetaTagHtml = [0];
 var cardTagsSemanticas = [0];
 var cardTagsSemanticasTexto = [0];
+var cardTagsTexto = [0];
 
 for (var i = 0; i < qtdCardTagsHTML; i++) {
     cardTagHtml[i] =
@@ -256,6 +280,17 @@ for (var i = 0; i < qtdTagsSemanticasTexto; i++) {
         '</div>' +
         '<div class="card-body">' +
         '<p class="card-text">' + cardsTagsSemanticasTexto[i].descricao + '</p>' +
+        '</div>' +
+        '</div>'
+}
+
+for (var i = 0; i < qtdTagsTexto; i++) {
+    cardTagsTexto[i] =
+        '<div class="card mb-3 w-100 shadow">' +
+        '<div class="card-header text-white bg-orange"><dfn class="tituloDefinicao"> ' + cardsTagsTexto[i].titulo + ' </dfn>' +
+        '</div>' +
+        '<div class="card-body">' +
+        '<p class="card-text">' + cardsTagsTexto[i].descricao + '</p>' +
         '</div>' +
         '</div>'
 }
@@ -326,6 +361,13 @@ var conteudoTutorial = [{
             cardTagsSemanticasTexto
         ]
     },
+    {
+        codigoTutorial: 5,
+        paragrafo: [
+            "As tags de formatação de textos, não servem somente para formatar os textos de forma visual, o principal objetivo dessas tags é deixar o html semântico, ou seja, descrever o conteúdo do documento para o browser para o melhor entendimento. Algumas das tags abaixo já foram vistas no capítulo 'Semântica', mas serão abordadas novamente para facilitar o entendimento.",
+            cardTagsTexto
+        ]
+    }
 ]
 
 $(document).ready(function() {
