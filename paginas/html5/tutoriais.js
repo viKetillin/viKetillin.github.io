@@ -231,7 +231,7 @@ var qtdCardTagsHTML = cardsTagsHTML.length;
 var qtdCardMetaTagsHTML = cardsMetaTagsHTML.length;
 var qtdTagsSemanticas = cardsTagsSemanticas.length;
 var qtdTagsSemanticasTexto = cardsTagsSemanticasTexto.length;
-var qtdTagsTexto = cardsTagsSemanticasTexto.length;
+var qtdTagsTexto = cardsTagsTexto.length;
 var conteudoCardsTags = null;
 
 var cardTagHtml = [0];
