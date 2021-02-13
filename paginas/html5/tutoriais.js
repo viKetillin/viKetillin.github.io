@@ -314,7 +314,7 @@ for (var i = 0; i < qtdTagsTexto; i++) {
         '</div>'
 }
 
-for (var i = 0; i < qtdTagsTexto; i++) {
+for (var i = 0; i < qtdTagsListas; i++) {
     cardTagsListas[i] =
         '<div class="card mb-3 w-100 shadow">' +
         '<div class="card-header text-white bg-orange"><dfn class="tituloDefinicao"> ' + cardsTagsListas[i].titulo + ' </dfn>' +
