@@ -402,7 +402,7 @@ var conteudoTutorial = [{
         codigoTutorial: 6,
         paragrafo: [
             "<p> Lista é um importante recurso de HTML, pois permite criarmos tópicos de textos para uma melhor exemplificação de um determinado assunto. São recursos extremamente usados, inclusive quando nem imaginamos que ele esta sendo usado, como no caso de menus. Hoje, boa parte dos menus em HTML é feito com listas. Há três tipos de listas:<ul style='margin-left:20px;'><li>Não ordenada</li><li>Ordenada</li><li>De definição</li></ul></p>",
-
+            cardTagsListas
         ]
     }
 ]
