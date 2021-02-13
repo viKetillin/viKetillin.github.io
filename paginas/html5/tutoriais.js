@@ -229,24 +229,19 @@ var cardsTagsTexto = [{
 
 var cardsListas = [{
         codigoCardTag: 0,
-        titulo: "Tag de título",
-        descricao: "<p class='card-text'>Existem 6 tipos de títulos diferentes em html classificados pelo tamanho de fonte que vão desde <strong>&lt;h1&gt;&lt;/h1&gt;</strong> até<strong>&lt;h6&gt; &lt;/h6&gt</strong>.<div class='code' style='line-height: 15pt; padding-bottom:1px; padding-top:5px;'><p style='margin-top:10px;'>&lt;<span class='rosa'>h1</span>&gt; &lt;/<span class='rosa'>h1</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h2</span>&gt; &lt;/<span class='rosa'>h2</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h3</span>&gt; &lt;/<span class='rosa'>h3</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h4</span>&gt; &lt;/<span class='rosa'>h4</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h5</span>&gt; &lt;/<span class='rosa'>h5</span>&gt;</p><p style='margin-top:10px;'>&lt;<span class='rosa'>h6</span>&gt; &lt;/<span class='rosa'>h6</span>&gt;</p></div><p>Motores de busca utilizam os títulos, ou seja, as tags de título para indexar a estrutura e a organização do conteúdo dos sites.</p><p>Essa estrutura indexada segue o padrão: &lt;h1&gt; para os títulos principais, &lt;h2&gt; para os subtítulos, &lt;h3&gt; para os subtítulos dos subtítulos e contínua seguindo essa ordem do mais importante ao menos importante.</p><p><strong>Dica:</strong> Use as tags de título somenta para títulos, jamais pela formatação da fonte!</p></p>"
+        titulo: "Listas Ordenadas",
+        descricao: "<p>As listas ordenadas ou numeradas são usadas para indicar alguma sequência ou numeração As tags usadas para criar uma lista não ordenada são &lt;ol&gt; e &lt;li&gt;. A tag &lt;ol&gt; é usada para definir a lista e a tag &lt;li&gt; é usada para cada item da lista.</p><p class='card-text'>O <strong>&lt;header&gt</strong>; é utilizado para representar o cabeçalho de um documento ou seção declarado no HTML. Nele podemos inserir elementos de &lt;h1&gt; a &lt;h6&gt;, até elementos para representar imagens, parágrafos ou mesmo listas de navegação.</p><div class='code' style='line-height: 15pt; padding-bottom:1px; padding-top:5px;'><p style='margin-top:10px;'>&lt<span class='rosa'>html</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>head</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>title</span>&gtListas em HTML&lt/<span class='rosa'>title</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>head</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>body</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>p</span>&gtListas de Aprovados&lt/<span class='rosa'>p</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>ol</span>&gt<p style='margin-top:10px;margin-left:60px;'>&lt<span class='rosa'>li</span>&gtBia&lt/<span class='rosa'>li</span>&gt</p><p style='margin-top:10px; margin-left:60px;'>&lt<span class='rosa'>li</span>&gtPedro&lt/<span class='rosa'>li</span>&gt</p><p style='margin-top:10px; margin-left:60px;'>&lt<span class='rosa'>li</span>&gtJoão&lt/<span class='rosa'>li</span>&gt</p><p style='margin-left: 40px;'>&lt/<span class='rosa'>ol</span>&gt</p><p style='margin-top:10px;margin-left:20px;'>&lt/<span class='rosa'>body</span>&gt</p><p style='margin-top:10px;'>&lt/<span class='rosa'>html</span>&gt</p></div><p class='resultado'><b>Resultado</b></p><div style='margin-left:20px;'><p>Listas de Aprovados</p><ol><li>Bia</li><li>Pedro</li><li>João</li></ol></div>"
     },
     {
         codigoCardTag: 1,
-        titulo: "Tag de parágrafo",
-        descricao: "<p class='card-text'>A tag que representa um parágrafo dentro do html é a tag<b>&lt;p&gt;</b><b>&lt;/p&gt;</b>.<div class='code' style='line-height: 15pt; padding-bottom:1px; padding-top:5px;'><p style='margin-top:10px;'>&lt;<span class='rosa'>p</span>&gt; Páragrafo aqui! &lt;/<span class='rosa'>p</span>&gt;</p></div><p><strong>Observação:</strong> A tag de parágrafo remove todos os espaços adicionais, por isso para colocar espaços em brancos propositalmente, não adianta apenas utilizar espaço, você deve ou criar um estilo para adicionar o espaço ou utilizar a entidade &nbsp; do html.</p></p>"
+        titulo: "Listas Não Ordenadas",
+        descricao: "<p class='card-text'>As Listas Não Ordenadas são iniciadas com a tag &ltul&gt e são representadas por pequenos 'bullets'.</p><div class='code' style='line-height: 15pt; padding-bottom:1px; padding-top:5px;'><p style='margin-top:10px;'>&lt<span class='rosa'>html</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>head</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>title</span>&gtListas em HTML&lt/<span class='rosa'>title</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>head</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>body</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>p</span>&gtLista de Compras&lt/<span class='rosa'>p</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>ul</span>&gt<p style='margin-top:10px;margin-left:60px;'>&lt<span class='rosa'>li</span>&gtQueijo&lt/<span class='rosa'>li</span>&gt</p><p style='margin-top:10px; margin-left:60px;'>&lt<span class='rosa'>li</span>&gtLeite&lt/<span class='rosa'>li</span>&gt</p><p style='margin-top:10px; margin-left:60px;'>&lt<span class='rosa'>li</span>&gtArroz&lt/<span class='rosa'>li</span>&gt</p><p style='margin-top:10px; margin-left:60px;'>&lt<span class='rosa'>li</span>&gtPão&lt/<span class='rosa'>li</span>&gt</p><p style='margin-left: 40px;'>&lt/<span class='rosa'>ul</span>&gt</p><p style='margin-top:10px;margin-left:20px;'>&lt/<span class='rosa'>body</span>&gt</p><p style='margin-top:10px;'>&lt/<span class='rosa'>html</span>&gt</p></div><p class='resultado'><b>Resultado</b></p><div style='margin-left:20px;'><p>Lista de Compras</p><ul><li>Queijo</li><li>Leite</li><li>Arroz</li><li>Pão</li></ul></div>"
     },
     {
         codigoCardTag: 2,
-        titulo: "Quebra de linha",
-        descricao: "<p class='card-text'><p>Para quebrar linhas utilizamos a tag <b>&lt;/br&gt;</b>.</p><p>Existe também a tag &lt;hr&gt;&lt;/hr&gt; que em adicional a quebra de linha, ela cria um desenho de uma linha horizontal indicando o fim da seção.</p></p>"
+        titulo: "Listas de Definição",
+        descricao: "<p class='card-text'><strong>Listas de definição de definição</strong> são usadas em assuntos onde há um termo a em sequência a sua definição, estilo perguntas e respostas. As tags usadas são &lt;dl&gt;, &lt;dt&gt; e &lt;dd&gt;.<ul style='margin-left: 20px;'><li>&lt;dl&gt; definition list - cria a lista de definição</li><li>&lt;dt&gt; difinition term - onde o termo é proposto</li><li>&lt;dd&gt; definition definition - onde o termo é definido</li></ul><div class='code' style='line-height: 15pt; padding-bottom:1px; padding-top:5px; width: 70%;'><p style='margin-top:10px;'>&lt<span class='rosa'>html</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>head</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>title</span>&gtListas em HTML&lt/<span class='rosa'>title</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>head</span>&gt</p><p style='margin-top:10px; margin-left:20px;'>&lt<span class='rosa'>body</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>p</span>&gtPrincipais termos do glossário de Cloud Computing&lt/<span class='rosa'>p</span>&gt</p><p style='margin-top:10px;margin-left:40px;'>&lt<span class='rosa'>dl</span>&gt<p style='margin-top:10px;margin-left:60px;'>&lt<span class='rosa'>dt</span>&gtBaaS&lt/<span class='rosa'>dt</span>&gt</p><p style='margin-top:10px;margin-left:60px;'>&lt;<span class='rosa'>dd</span>&gtBackend Como Serviço&lt/<span class='rosa'>dd</span>&gt</p><p style='margin-top:10px; margin-left:60px;'>&lt<span class='rosa'>dt</span>&gtIaaS&lt/<span class='rosa'>dt</span>&gt</p><p style='margin-top:10px;margin-left:60px;'>&lt;<span class='rosa'>dd</span>&gtInfraestrutura Como Serviço&lt/<span class='rosa'>dd</span>&gt</p><p style='margin-top:10px; margin-left:60px;'>&lt<span class='rosa'>dt</span>&gtPaaS&lt/<span class='rosa'>dt</span>&gt</p><p style='margin-top:10px;margin-left:60px;'>&lt;<span class='rosa'>dd</span>&gtPlataforma Como Serviço&lt/<span class='rosa'>dd</span>&gt</p><p style='margin-top:10px; margin-left:60px;'>&lt<span class='rosa'>dl</span>&gtSaaS&lt/<span class='rosa'>li</span>&gt</p><p style='margin-top:10px;margin-left:60px;'>&lt;<span class='rosa'>dd</span>&gtSoftware Como Serviço&lt/<span><p style='margin-left: 40px;'>&lt/<span class='rosa'>dl</span>&gt</p><p style='margin-top:10px;margin-left:20px;'>&lt/<span class='rosa'>body</span>&gt</p><p style='margin-top:10px;'>&lt/<span class='rosa'>html</span>&gt</p></div><p class='resultado'><b>Resultado</b></p><div style='margin-left:20px;'><p>Principais termos do glossário de Cloud Computing</p><dl><dt>BaaS</dt><dd>Backend Como Serviço</dd><dt>IaaS</dt><dd>Infraestrutura Como Serviço</dd><dt>PaaS</dt><dd>Plataforma Como Serviço</dd><dt>SaaS</dt><dd>Software Como Serviço</dd></dl></div>"
     },
-    {
-        codigoCardTag: 3,
-        titulo: "Tags de formatação de textos",
-        descricao: "<p class='card-text'><p>A tag <b>&lt;b&gt;&lt;/b&gt;</b> é utilizado para deixar o texto em negrito, apenas por questão de estilização.</p><p>A tag <b>&lt;strong&gt;&lt;/strong&gt;</b> tem o mesmo efeito que a tag b visualmente, mas ela serve espeficicamente para ênfatizar o conteúdo do texto que está dentro dela.</p><p>A tag <b>&lt;i&gt;&lt;/i&gt;</b> serve para deixar o texto em itálico, não tem efeito algum na semântica.</p><p>Outra tag que deixa o texto em itálico é a tag <b>&lt;em&gt;&lt;/em&gt;</b>, mas diferente da tag i ela serve vai além de deixar apenas o texto em itálico, ela serve também para dar ênfase ao texto.</p><p>A tag <b>&lt;ins&gt;&lt;/ins&gt;</b> mostra que um texto foi inserido na página.</p><p>Em conjunto com a tag <b>&lt;cite&gt;&lt;/cite&gt;</b> é utilizado a tag &lt;blockquote&gt;&lt;/blockquote&gt; ou a tag &lt;q&gt;&lt;/q&gt; para inserir citações, a tag &lt;blockquote&gt;&lt;/blockquote&gt; para citaçõesmaiores e a tag &lt;q&gt;&lt;/q&gt; para citações menores.</p><p>A tag <b>&lt;abbr&gt;&lt;/abbr&gt;</b> apresenta abreviações, juntamente com a forma completa.</p><p>A tag <b>&lt;address&gt;&lt;/address&gt;</b> serve para especificar as informações de contato do autor/proprietário de um documento ou artigo</p><p>Essa é uma tag de definição <b>&lt;dfn&gt;&lt;/dfn&gt;</b>, ela serve para descrever algum conteúdo, por exemplo, no contexto de um dicionário você usaria da seguinte forma<b>&lt;dfn&gt;Pneumoultramicroscopicossilicovulcanoconiótico&lt;/dfn&gt;</b> Indica alguém ou algo relacionado com uma doença aguda nos pulmões que se origina com a inalação de cinzas vulcânicas.</p><p>A tag <b>&lt;code&gt;&lt;/code&gt;</b> serve para apresentar trechos de códigos dentro de um parágrafo.</p><p>A tag <b>&lt;sub&gt;&lt;/sub&gt;</b> serve para deixar um texto subscrito. Exemplo: H<sub>2</sub>O = Água</p><p>A tag <b>&lt;sup&gt;&lt;/sup&gt;</b> serve para deixar um texto sobscrito. Exemplo 2<sup>2</sup> = 4</p><p>A tag <b>&lt;small&gt;&lt;/small&gt;</b> reduz o tamanho do texto, o objetivo é referir informações redundantes ou inválidas.</p></p>"
-    }
 ]
 
 var qtdCardTagsHTML = cardsTagsHTML.length;
@@ -254,6 +249,7 @@ var qtdCardMetaTagsHTML = cardsMetaTagsHTML.length;
 var qtdTagsSemanticas = cardsTagsSemanticas.length;
 var qtdTagsSemanticasTexto = cardsTagsSemanticasTexto.length;
 var qtdTagsTexto = cardsTagsTexto.length;
+var qtdTagsListas = cardsTagsListas.length;
 var conteudoCardsTags = null;
 
 var cardTagHtml = [0];
@@ -261,6 +257,7 @@ var cardMetaTagHtml = [0];
 var cardTagsSemanticas = [0];
 var cardTagsSemanticasTexto = [0];
 var cardTagsTexto = [0];
+var cardTagsListas = [0];
 
 for (var i = 0; i < qtdCardTagsHTML; i++) {
     cardTagHtml[i] =
@@ -313,6 +310,17 @@ for (var i = 0; i < qtdTagsTexto; i++) {
         '</div>' +
         '<div class="card-body">' +
         '<p class="card-text">' + cardsTagsTexto[i].descricao + '</p>' +
+        '</div>' +
+        '</div>'
+}
+
+for (var i = 0; i < qtdTagsTexto; i++) {
+    cardTagsListas[i] =
+        '<div class="card mb-3 w-100 shadow">' +
+        '<div class="card-header text-white bg-orange"><dfn class="tituloDefinicao"> ' + cardsTagsListas[i].titulo + ' </dfn>' +
+        '</div>' +
+        '<div class="card-body">' +
+        '<p class="card-text">' + cardsTagsListas[i].descricao + '</p>' +
         '</div>' +
         '</div>'
 }
