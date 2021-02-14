@@ -404,7 +404,18 @@ var conteudoTutorial = [{
             "<p> Lista é um importante recurso de HTML, pois permite criarmos tópicos de textos para uma melhor exemplificação de um determinado assunto. São recursos extremamente usados, inclusive quando nem imaginamos que ele esta sendo usado, como no caso de menus. Hoje, boa parte dos menus em HTML é feito com listas. Há três tipos de listas:<ul style='margin-left:20px;'><li>Não ordenada</li><li>Ordenada</li><li>De definição</li></ul></p>",
             cardTagsListas
         ]
-    }
+    },
+    {
+        codigoTutorial: 7,
+        paragrafo: [
+            " <p>Links geralmente são textos que permitem que os usuários cliquem no caminho de uma página para outra.</p>",
+            "<p>Links podem ser:<ul style='margin-left: 20px;'><li>Internos- para lugares específicos da página (âncoras)</li><li>Locais - para páginas do mesmo domínio</li><li>Globais - para outros domínios, fora do site</li></ul></p>",
+            "<p>Os hiperlinks são definidos com a <b>&lt;a&gt</b> tag HTML :</p>",
+            "<p><b>Exemplo de link interno:</b></p>",
+
+
+        ]
+    },
 ]
 
 $(document).ready(function() {
