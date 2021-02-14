@@ -408,12 +408,17 @@ var conteudoTutorial = [{
     {
         codigoTutorial: 7,
         paragrafo: [
-            " <p>Links geralmente são textos que permitem que os usuários cliquem no caminho de uma página para outra.</p>",
+            "<p>Links geralmente são textos que permitem que os usuários cliquem no caminho de uma página para outra.</p>",
             "<p>Links podem ser:<ul style='margin-left: 20px;'><li>Internos- para lugares específicos da página (âncoras)</li><li>Locais - para páginas do mesmo domínio</li><li>Globais - para outros domínios, fora do site</li></ul></p>",
             "<p>Os hiperlinks são definidos com a <b>&lt;a&gt</b> tag HTML :</p>",
             "<p><b>Exemplo de link interno:</b></p>",
-
-
+            "<div class='code' style='line-height: 15pt;'><p>&lt<span class='rosa'>a</span> <span class='verde'>href</span>=<span class='amarelo'>'ndex.html'</span>&gtTexto do Link&lt<span class='rosa'>a</span>&gt;</p></div>",
+            "<p><b>Exemplo de link local:</b></p>",
+            "<div class='code' style='line-height: 15pt;'><p>&lt<span class='rosa'>a</span> <span class='verde'>href</span>=<span class='amarelo'>'index.html'</span>&gtTexto do Link&lt<span class='rosa'>a</span>&gt;</p></div>",
+            "<p><b>href-</b> é o atributo que especifica o endereço de destino</p>",
+            "<p><b>'Texto do link'-</b> é a parta que será visível para o usuário clicar e ser enviado para o endereço especificado.</p>",
+            "<p><b>Exemplo de link global:</b></p>",
+            "<div class='code' style='line-height: 15pt;'><p>&lt<span class='rosa'>a</span><span class='verde'>href</span>=<span class='amarelo'>'url'</span>&gtTexto do Link&lt<span class='rosa'>a</span>&gt;</p></div>",
         ]
     },
 ]
