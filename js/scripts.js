@@ -223,7 +223,7 @@ $(document).ready(function() {
         'BACK-END' +
         '</a>' +
         '<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">' +
-        '<a class="dropdown-item" href="#">MySQL</a>' +
+        '<a class="dropdown-item" href="#">SQL</a>' +
         '<a class="dropdown-item" href="../c/c.html">C#</a>' +
         '</div>' +
         '</li>' +
