@@ -102,7 +102,9 @@ ul.ulNav a {
 #divInicio {
   height: 100vh;
   background-image: url("../img/backgroundPortfolio.jpg");
-  padding: 14em 22em;
+  padding-top: 14em;
+   padding-left: 22em;
+   background-size: cover;
 }
 
 #divInicio .localizacao {
@@ -508,10 +510,10 @@ a:hover {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  #divInicio div {
-    width: 100%;
-    margin-left: 130px;
-  }
+#divInicio .nomeInicio{
+    font-size: 50px;
+}
+
   #hamburger {
     display: none;
   }
@@ -550,10 +552,14 @@ a:hover {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-  #divInicio div {
-    width: 100%;
-    margin-left: 0px;
+
+  #divInicio {    
+    padding-left: 5em;
   }
+
+  #divInicio .nomeInicio{
+    font-size: 45px;
+}
   nav {
     z-index: 2;
     display: none;
@@ -608,10 +614,14 @@ a:hover {
 }
 
 @media (min-width: 376px) and (max-width: 425px) {
-  #divInicio div {
-    width: 100%;
-    margin-left: 0px;
-  }
+    #divInicio {    
+        padding-left: 3em;
+      }
+
+      
+  #divInicio .nomeInicio{
+    font-size: 40px;
+}
   nav {
     z-index: 2;
     display: none;
@@ -672,10 +682,14 @@ a:hover {
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
-  #divInicio div {
-    width: 100%;
-    margin-left: 0px;
-  }
+    #divInicio {    
+        padding-left: 3em;
+      }
+      #divInicio .minhaDescricao, #divInicio .spanBoasVindas{  font-size: 25px; }
+
+      #divInicio .nomeInicio{
+       font-size: 35px;
+      }
   nav {
     z-index: 2;
     display: none;
@@ -746,10 +760,14 @@ a:hover {
 }
 
 @media (max-width: 320px) {
-  #divInicio div {
-    width: 100%;
-    margin-left: 0px;
-  }
+    #divInicio {    
+        padding-left: 2em;
+      }
+      #divInicio .minhaDescricao, #divInicio .spanBoasVindas{  font-size: 18px; }
+
+      #divInicio .nomeInicio{
+       font-size: 25px;
+      }
   nav {
     z-index: 2;
     display: none;
