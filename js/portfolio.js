@@ -19,7 +19,6 @@ $(document).ready(function() {
         '<li id="navResumo"><a href="index.html?codigoNav=2"><i class="fas fa-graduation-cap"></i> Resumo</a></li>' +
         '<li id="navPortfolio"><a href="index.html?codigoNav=3"><i class="fas fa-briefcase"></i> Portfólio</a></li>' +
         '<li id="navContato"><a href="index.html?codigoNav=4"><i class="fas fa-address-book"></i> Contato</a></li>' +
-        '<li><a target="_blank" href="indexHTML.html"><i class="fas fa-chalkboard-teacher"></i> Tutoriais</a></li>' +
         '</ul>' +
 
         '<span style="text-align: center; font-size: 12px; color:  rgba(255, 255, 255, 0.705); position: absolute; bottom: 18px; left: 28px;">Copyright © Code Lady - 2019</span>' +

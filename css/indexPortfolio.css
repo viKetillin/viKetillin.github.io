@@ -1,11 +1,85 @@
-/*#region Inicio*/
-#divInicio {
+nav {
   height: 100vh;
-  background-image: url("../img/backgroundPortfolio.jpg");
-  padding: 14em 22em;
+  background-color: #333;
+  width: 230px;
+  padding-top: 30px;
+  position: absolute;
+  left: 0;
+  z-index: 1;
 }
 
-#divInicio .nomeInicio {
+#divResumo .row {
+  padding: 0;
+}
+
+.imgPortfolio {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul.ulNome {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+li.liNome {
+  color: #fff;
+  font-size: 30px;
+}
+
+li.liCargo {
+  color: rgba(255, 255, 255, 0.705);
+}
+
+ul.ulNav {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.705);
+  padding: 0px;
+  font-size: 18px;
+}
+
+ul.ulNav li:hover {
+  color: #fff;
+  cursor: pointer;
+  border-left: 8px solid #f6009c;
+  padding-left: 17px;
+}
+
+ul.ulNav li {
+  padding: 8px 0px 8px 25px;
+}
+
+ul.ulNav li i {
+  width: 24px;
+  text-align: center;
+  margin-right: 6px;
+}
+
+.active {
+  border-left: 8px solid #f6009c;
+  padding-left: 17px !important;
+}
+
+.active a {
+  color: #fff !important;
+}
+
+ul.ulNav a {
+  color: rgba(255, 255, 255, 0.705);
+  text-decoration: none;
+}
+
+#divSobre,
+#divContato,
+#divResumo,
+#divPortfolio {
+  background-color: #c5c5c5;
+  height: 100vh;
+  font-family: sans-serif, Roboto;
+}
+
+.nomeInicio {
   font-size: 70px;
   color: #eee;
   display: block;
@@ -13,16 +87,22 @@
   margin-top: 0.3em;
 }
 
-#divInicio .nomeInicio span {
+.nomeInicio span {
   color: #f6009c;
 }
 
-#divInicio .minhaDescricao {
+.minhaDescricao {
   font-size: 30px;
   color: #fff;
   text-shadow: 1px 1px #f6009c;
   margin-top: -0.4em;
   display: block;
+}
+
+#divInicio {
+  height: 100vh;
+  background-image: url("../img/backgroundPortfolio.jpg");
+  padding: 14em 22em;
 }
 
 #divInicio .localizacao {
@@ -50,38 +130,8 @@
   margin-top: 2em;
 }
 
-#divInicio .redesSociais a {
-  margin-right: 12px;
-  background-color: #f6009cd4;
-  border-radius: 2px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  padding: 8px 5px 9px 9px;
-  color: #fff;
-}
-/*#endregion Inicio*/
-
-#divResumo .row {
-  padding: 0;
-}
-
-.active {
-  border-left: 8px solid #f6009c;
-  padding-left: 17px !important;
-}
-
-.active a {
-  color: #fff !important;
-}
-
-#divSobre,
-#divContato,
-#divResumo,
-#divPortfolio {
-  background-color: #c5c5c5;
-  height: 100vh;
-  font-family: sans-serif, Roboto;
+#divInicio .redesSociais a{
+    margin-right:12px; background-color: #f6009cd4; border-radius: 2px; width: 40px; height: 40px; cursor: pointer; padding: 8px 5px 9px 9px; color: #fff;
 }
 
 #divSobre .div {
