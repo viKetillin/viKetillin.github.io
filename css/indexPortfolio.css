@@ -1,825 +1,787 @@
-            html {
-                overflow: hidden;
-            }
-            
-            nav {
-                height: 100vh;
-                background-color: #333;
-                width: 230px;
-                padding-top: 30px;
-                position: absolute;
-                left: 0;
-                z-index: 1;
-            }
-            
-            #divResumo .row {
-                padding: 0;
-            }
-            
-            .imgPortfolio {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            
-            ul.ulNome {
-                list-style-type: none;
-                padding: 0;
-                text-align: center;
-            }
-            
-            li.liNome {
-                color: #fff;
-                font-size: 30px;
-            }
-            
-            li.liCargo {
-                color: rgba(255, 255, 255, 0.705);
-            }
-            
-            ul.ulNav {
-                list-style-type: none;
-                color: rgba(255, 255, 255, 0.705);
-                padding: 0px;
-                font-size: 18px;
-            }
-            
-            ul.ulNav li:hover {
-                color: #fff;
-                cursor: pointer;
-                border-left: 8px solid #DA062C;
-                padding-left: 17px;
-            }
-            
-            ul.ulNav li {
-                padding: 8px 0px 8px 25px;
-            }
-            
-            ul.ulNav li i {
-                width: 24px;
-                text-align: center;
-                margin-right: 6px;
-            }
-            
-            .active {
-                border-left: 8px solid #DA062C;
-                padding-left: 17px !important;
-            }
-            
-            .active a {
-                color: #fff !important;
-            }
-            
-            .typewrite {
-                color: #fff;
-                border-bottom: 3px solid #DA062C;
-            }
-            
-            ul.ulNav a {
-                color: rgba(255, 255, 255, 0.705);
-                ;
-                text-decoration: none;
-            }
-            
-            #divInicio div {
-                z-index: 1;
-                position: absolute;
-                top: 50%;
-                left: 45%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                margin-left: 230px;
-            }
-            
-            #divSobre,
-            #divContato,
-            #divResumo,
-            #divPortfolio {
-                background-color: #c5c5c5;
-                height: 100vh;
-                font-family: sans-serif, Roboto;
-            }
-            
-            .nomeInicio {
-                font-size: 80px;
-                color: #fff;
-                display: block;
-            }
-            
-            .nomeInicio span {
-                color: #DA062C;
-            }
-            
-            .minhaDescricao {
-                font-size: 30px;
-                color: #fff;
-            }
-            
-            .backgroundPortfolio {
-                height: 100vh;
-                position: absolute;
-                right: 0;
-                top: 0;
-                z-index: 0;
-            }
-            
-            #divSobre .div {
-                padding: 30px 100px 0px 330px;
-                margin: 0 auto;
-            }
-            
-            #divSobre .div .apresentacaoNome {
-                display: block;
-                margin-bottom: 30px;
-                font-size: 22px;
-            }
-            
-            #divSobre .div .descricaoSobre {
-                font-size: 16px;
-            }
-            
-            .divInfo {
-                margin-top: 20px;
-            }
-            
-            .spanInfo {
-                display: block;
-                margin-top: 20px;
-            }
-            
-            .spanInfo i {
-                color: #DA062C;
-                font-size: 22px;
-                text-align: center;
-                width: 34px;
-                margin-bottom: 10px
-            }
-            
-            .bordaSobre {
-                width: 100%;
-                border-bottom: 5px solid #DA062C;
-                margin-top: 30px;
-                margin-bottom: 40px;
-                border-radius: 20px;
-            }
-            
-            .btnSobre {
-                margin-top: 20px;
-                width: 146px;
-                border: 0px solid #fff;
-                color: #fff;
-                background-color: #DA062C;
-                padding: 8px;
-                border-radius: 3px;
-            }
-            
-            .btnSobre i {
-                margin-right: 6px;
-            }
-            
-            .spanResumo {
-                font-size: 26px;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-            
-            .btnResumo {
-                margin-top: 20px;
-                margin-right: 12px;
-                width: 146px;
-                border: 0px solid #fff;
-                color: #333;
-                background-color: #fff;
-                padding: 8px;
-                border-radius: 3px;
-                font-size: 18px;
-                cursor: pointer;
-            }
-            
-            .btnResumo.ativo {
-                margin-top: 20px;
-                width: 146px;
-                border: 0px solid #fff;
-                color: #fff;
-                background-color: #DA062C;
-                padding: 8px;
-                border-radius: 3px;
-            }
-            
-            .cardEducacao {
-                margin-top: 20px;
-                margin-right: 20px;
-                background-color: #fff;
-                width: 300px;
-                height: 180px;
-                border-bottom: 8px solid #DA062C;
-                padding: 15px;
-            }
-            
-            .cardEducacao .fas.fa-graduation-cap,
-            .cardEducacao .fas.fa-laptop {
-                color: #DA062C;
-                font-size: 35px;
-                display: block;
-            }
-            
-            .cardEducacao .nomeCurso {
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: 14px;
-                display: block;
-            }
-            
-            .cardEducacao .nomeInstituicao {
-                font-size: 17px;
-                display: block;
-            }
-            
-            .cardEducacao .dataCurso {
-                color: #777;
-                font-weight: bold;
-            }
-            
-            .cardPortfolio {
-                margin-top: 20px;
-                margin-right: 20px;
-                background-color: #fff;
-                width: 350px;
-                height: 200px;
-                overflow: hidden;
-            }
-            
-            .cardPortfolio .headerCard {
-                background-color: #ddd;
-                color: #6a6a6a;
-                height: 35px;
-                padding: 5px 10px 10px 8px;
-            }
-            
-            .cardPortfolio .headerCard .bolinhaVermelha {
-                color: #ff5f57;
-            }
-            
-            .cardPortfolio .headerCard .bolinhaAmarela {
-                color: #ffbd2e;
-            }
-            
-            .cardPortfolio .headerCard .bolinhaVerde {
-                color: #28ca41;
-            }
-            
-            .cardPortfolio .headerCard .nomeProjeto {
-                font-size: 14px;
-                color: #666;
-                font-weight: bold;
-            }
-            
-            .paddingPorfolio {
-                padding: 30px 100px 0px 330px;
-                margin: 0 auto;
-            }
-            
-            .cardEducacao .nomeHabilidades {
-                font-size: 26px;
-                font-weight: bold;
-                margin-top: 14px;
-                margin-left: 20px;
-                vertical-align: middle;
-            }
-            
-            .cardEducacao .nomeCurso {
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: 14px;
-                display: block;
-            }
-            
-            .cardEducacao .progress {
-                margin-top: 30px;
-            }
-            
-            .cardEducacao .bg-danger {
-                background-color: #da062c!important
-            }
-            
-            .cardEducacao .valorProgressBar {
-                box-shadow: #87878752 1px 1px 1px 1px;
-                padding: 8px;
-                font-weight: bold;
-                width: 35px;
-                height: 35px;
-                border-radius: 50%;
-                background-color: #fff;
-                color: #333;
-                position: absolute;
-            }
-            
-            .acessarSite {
-                font-size: 13px;
-                margin-top: 3px;
-                margin-left: 20%;
-                cursor: pointer;
-                color: #007bff;
-            }
-            
-            .acessarSite:hover {
-                color: #0063cc;
-            }
-            
-            a {
-                color: #fff;
-                text-decoration: none;
-            }
-            
-            a:hover {
-                color: #fff;
-                text-decoration: none;
-            }
-            
-            .paddingDivContato {
-                padding: 30px 100px 0px 330px;
-                margin: 0 auto;
-            }
-            
-            .tituloSessao {
-                display: block;
-                margin-bottom: 30px;
-                font-size: 26px;
-                text-transform: uppercase;
-            }
-            
-            .divBtnContato {
-                margin: auto auto;
-                text-align: center;
-            }
-            
-            .btnWpp {
-                margin-top: 20px;
-                margin-right: 12px;
-                width: 146px;
-                border: 0px solid #fff;
-                color: #fff;
-                background-color: #009714;
-                padding: 8px;
-                border-radius: 3px;
-            }
-            
-            .btnEmail {
-                margin-top: 20px;
-                width: 146px;
-                border: 0px solid #fff;
-                color: #fff;
-                background-color: #DA062C;
-                padding: 8px;
-                border-radius: 3px;
-            }
-            
-            .grupoBtnResumo {
-                display: block;
-            }
-            
-            #dropdownResumo {
-                display: none;
-            }
-            /**Hamburger**/
-            
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            /* Icon 1 */
-            
-            #hamburger {
-                width: 30px;
-                height: 0px;
-                position: absolute;
-                top: 35px;
-                right: 35px;
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-                -webkit-transition: .5s ease-in-out;
-                -moz-transition: .5s ease-in-out;
-                -o-transition: .5s ease-in-out;
-                transition: .5s ease-in-out;
-                cursor: pointer;
-                z-index: 2;
-            }
-            
-            #hamburger span {
-                display: block;
-                position: absolute;
-                height: 4px;
-                width: 100%;
-                background: #DA062C;
-                border-radius: 9px;
-                opacity: 1;
-                left: 0;
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-                -webkit-transition: .25s ease-in-out;
-                -moz-transition: .25s ease-in-out;
-                -o-transition: .25s ease-in-out;
-                transition: .25s ease-in-out;
-            }
-            
-            .paddingResumo {
-                padding: 30px 100px 0px 330px;
-                margin: 0 auto;
-            }
-            
-            #divContato {
-                overflow: hidden;
-            }
-            /* Icon 3 */
-            
-            #hamburger span:nth-child(1) {
-                top: 0px;
-            }
-            
-            #hamburger span:nth-child(2),
-            #hamburger span:nth-child(3) {
-                top: 10px;
-            }
-            
-            #hamburger span:nth-child(4) {
-                top: 20px;
-            }
-            
-            #hamburger.open span:nth-child(1) {
-                top: 18px;
-                width: 0%;
-                left: 50%;
-            }
-            
-            #hamburger.open span:nth-child(2) {
-                -webkit-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                -o-transform: rotate(45deg);
-                transform: rotate(45deg);
-            }
-            
-            #hamburger.open span:nth-child(3) {
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-                -o-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-            }
-            
-            #hamburger.open span:nth-child(4) {
-                top: 18px;
-                width: 0%;
-                left: 50%;
-            }
-            
-            @media(min-width:1240px) {
-                .backgroundPortfolio {
-                    height: auto;
-                    width: 100%;
-                }
-                #hamburger {
-                    display: none;
-                }
-            }
-            
-            @media(min-width:1025px) and (max-width:1239px) {
-                #divInicio div {
-                    margin-left: 120px;
-                }
-                #hamburger {
-                    display: none;
-                }
-                .cardEducacao .nomeHabilidades {
-                    font-size: 18px;
-                    margin-left: 2px;
-                }
-            }
-            
-            @media(min-width:769px) and (max-width:1024px) {
-                #divInicio div {
-                    width: 100%;
-                    margin-left: 130px;
-                }
-                #hamburger {
-                    display: none;
-                }
-                .divBtnContato {
-                    margin-top: 30px;
-                    text-align: initial;
-                }
-                .cardEducacao .nomeHabilidades {
-                    font-size: 18px;
-                    display: block;
-                    margin: 0;
-                    text-align: center;
-                }
-                .cardEducacao img,
-                .cardEducacao svg {
-                    margin: 0 auto;
-                    display: block;
-                }
-                .paddingResumo {
-                    padding: 30px 30px 0px 270px;
-                    margin: 0 auto;
-                }
-                .btnResumo {
-                    margin-right: 5px;
-                    width: 125px;
-                }
-                .btnResumo.ativo {
-                    width: 125px;
-                }
-                .cardEducacao .nomeCurso {
-                    font-size: 16px;
-                }
-                .cardEducacao .nomeInstituicao {
-                    font-size: 15px;
-                }
-            }
-            
-            @media(min-width:426px) and (max-width:768px) {
-                #divInicio div {
-                    width: 100%;
-                    margin-left: 0px;
-                }
-                nav {
-                    z-index: 2;
-                    display: none;
-                }
-                .open~nav {
-                    display: block;
-                }
-                #divSobre .div {
-                    padding: 30px 100px 0px 50px;
-                    margin: 0 auto;
-                }
-                .paddingPorfolio {
-                    padding: 30px 0px 0px 50px;
-                }
-                .paddingDivContato {
-                    padding: 30px 0px 0px 25px;
-                }
-                .divBtnContato {
-                    margin-top: 25px;
-                }
-                .cardEducacao .nomeHabilidades {
-                    font-size: 18px;
-                    display: block;
-                    margin: 0;
-                    text-align: center;
-                }
-                .cardEducacao img,
-                .cardEducacao svg {
-                    margin: 0 auto;
-                    display: block;
-                }
-                .cardEducacao .nomeCurso {
-                    font-size: 16px;
-                }
-                .cardEducacao .nomeInstituicao {
-                    font-size: 15px;
-                }
-                .paddingResumo {
-                    padding: 30px 3% 0px 3%;
-                    margin: 0 auto;
-                }
-                .btnResumo {
-                    margin-right: 5px;
-                    width: 125px;
-                }
-                .btnResumo.ativo {
-                    width: 125px;
-                }
-                .cardEducacao {
-                    height: 200px;
-                }
-            }
-            
-            @media(min-width:376px) and (max-width:425px) {
-                #divInicio div {
-                    width: 100%;
-                    margin-left: 0px;
-                }
-                nav {
-                    z-index: 2;
-                    display: none;
-                }
-                .open~nav {
-                    display: block;
-                }
-                #divSobre .div {
-                    padding: 30px 100px 0px 30px;
-                    margin: 0 auto;
-                }
-                .paddingPorfolio {
-                    padding: 30px 0px 0px 25px;
-                }
-                .cardPortfolio {
-                    width: 92%;
-                }
-                .paddingDivContato {
-                    padding: 30px 0px 0px 25px;
-                }
-                .divBtnContato {
-                    margin-top: 25px;
-                }
-                .cardEducacao .nomeHabilidades {
-                    font-size: 18px;
-                    display: block;
-                    margin: 0;
-                    text-align: center;
-                }
-                .cardEducacao img,
-                .cardEducacao svg {
-                    margin: 0 auto;
-                    display: block;
-                }
-                .paddingResumo {
-                    padding: 30px 3% 0px 3%;
-                    margin: 0 auto;
-                }
-                .btnResumo {
-                    margin-right: 5px;
-                    width: 120px;
-                }
-                .btnResumo.ativo {
-                    width: 120px;
-                }
-                .cardEducacao {
-                    height: 200px;
-                    width: 95%;
-                }
-                .spanResumo {
-                    font-size: 24px;
-                }
-                #sessaoEducacao .col-md-12,
-                #sessaoExperiencia .col-md-12,
-                #sessaoHabilidades .col-md-12 {
-                    display: block !important;
-                }
-            }
-            
-            @media(min-width:321px) and (max-width:375px) {
-                #divInicio div {
-                    width: 100%;
-                    margin-left: 0px;
-                }
-                nav {
-                    z-index: 2;
-                    display: none;
-                }
-                .open~nav {
-                    display: block;
-                }
-                #divSobre .div {
-                    padding: 30px 100px 0px 30px;
-                    margin: 0 auto;
-                }
-                .paddingPorfolio {
-                    padding: 30px 0px 0px 25px;
-                }
-                .cardPortfolio {
-                    width: 90%;
-                }
-                .paddingDivContato {
-                    padding: 30px 0px 0px 25px;
-                }
-                .divBtnContato {
-                    margin-top: 25px;
-                }
-                .cardEducacao .nomeHabilidades {
-                    font-size: 18px;
-                    display: block;
-                    margin: 0;
-                    text-align: center;
-                }
-                .cardEducacao img,
-                .cardEducacao svg {
-                    display: none;
-                }
-                .cardEducacao .nomeHabilidades {
-                    font-size: 18px;
-                    display: block;
-                    margin: 0;
-                    text-align: center;
-                }
-                .cardEducacao img,
-                .cardEducacao svg {
-                    margin: 0 auto;
-                    display: block;
-                }
-                .paddingResumo {
-                    padding: 30px 3% 0px 3%;
-                    margin: 0 auto;
-                }
-                .btnResumo {
-                    margin-right: 3px;
-                    width: 110px;
-                }
-                .btnResumo.ativo {
-                    width: 110px;
-                }
-                .cardEducacao {
-                    height: 200px;
-                    width: 95%;
-                }
-                .spanResumo {
-                    font-size: 20px;
-                }
-                #sessaoEducacao .col-md-12,
-                #sessaoExperiencia .col-md-12,
-                #sessaoHabilidades .col-md-12 {
-                    display: block !important;
-                }
-            }
-            
-            @media(max-width:320px) {
-                #divInicio div {
-                    width: 100%;
-                    margin-left: 0px;
-                }
-                nav {
-                    z-index: 2;
-                    display: none;
-                }
-                .open~nav {
-                    display: block;
-                }
-                #divSobre .div {
-                    padding: 30px 100px 0px 30px;
-                    margin: 0 auto;
-                }
-                .paddingPorfolio {
-                    padding: 22px 0px 0px 18px;
-                }
-                #hamburger {
-                    top: 28px;
-                }
-                .cardPortfolio {
-                    width: 92%;
-                }
-                .paddingDivContato {
-                    padding: 30px 0px 0px 25px;
-                }
-                .divBtnContato {
-                    margin-top: 25px;
-                }
-                .btnWpp {
-                    margin-top: 12px 0px 0px 0px;
-                }
-                .btnEmail {
-                    margin-top: 12px 0px 0px 0px;
-                }
-                .cardEducacao .nomeHabilidades {
-                    font-size: 18px;
-                    display: block;
-                    margin: 0;
-                    text-align: center;
-                }
-                .cardEducacao img,
-                .cardEducacao svg {
-                    display: none;
-                }
-                .cardEducacao .nomeHabilidades {
-                    font-size: 18px;
-                    display: block;
-                    margin: 0;
-                    text-align: center;
-                }
-                .cardEducacao img,
-                .cardEducacao svg {
-                    margin: 0 auto;
-                    display: block;
-                }
-                .paddingResumo {
-                    padding: 30px 3% 0px 3%;
-                    margin: 0 auto;
-                }
-                .btnResumo {
-                    margin-right: 5px;
-                    width: 120px;
-                }
-                .btnResumo.ativo {
-                    width: 120px;
-                }
-                .cardEducacao {
-                    height: 200px;
-                    width: 95%;
-                }
-                .spanResumo {
-                    font-size: 24px;
-                }
-                #sessaoEducacao .col-md-12,
-                #sessaoExperiencia .col-md-12,
-                #sessaoHabilidades .col-md-12 {
-                    display: block !important;
-                }
-                .grupoBtnResumo {
-                    display: none;
-                }
-                .dropdownResumo {
-                    display: block;
-                }
-            }
+/*#region Inicio*/
+#divInicio {
+  height: 100vh;
+  background-image: url("../img/backgroundPortfolio.jpg");
+  padding: 14em 22em;
+}
+
+#divInicio .nomeInicio {
+  font-size: 70px;
+  color: #eee;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 0.3em;
+}
+
+#divInicio .nomeInicio span {
+  color: #f6009c;
+}
+
+#divInicio .minhaDescricao {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px #f6009c;
+  margin-top: -0.4em;
+  display: block;
+}
+
+#divInicio .localizacao {
+  display: block;
+  color: #eee;
+  margin-top: 1.3em;
+  font-size: 18px;
+}
+
+#divInicio .localizacao .fa-map-marker-alt {
+  margin-right: 0.2em;
+}
+
+#divInicio .spanBoasVindas {
+  color: #fff;
+  background-color: #f6009c;
+  opacity: 80%;
+  border-radius: 1em 1em 1em 0;
+  padding: 0.6em;
+  font-size: 22px;
+}
+
+#divInicio .redesSociais {
+  display: flex;
+  margin-top: 2em;
+}
+
+#divInicio .redesSociais a {
+  margin-right: 12px;
+  background-color: #f6009cd4;
+  border-radius: 2px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  padding: 8px 5px 9px 9px;
+  color: #fff;
+}
+/*#endregion Inicio*/
+
+#divResumo .row {
+  padding: 0;
+}
+
+.active {
+  border-left: 8px solid #f6009c;
+  padding-left: 17px !important;
+}
+
+.active a {
+  color: #fff !important;
+}
+
+#divSobre,
+#divContato,
+#divResumo,
+#divPortfolio {
+  background-color: #c5c5c5;
+  height: 100vh;
+  font-family: sans-serif, Roboto;
+}
+
+#divSobre .div {
+  padding: 30px 100px 0px 330px;
+  margin: 0 auto;
+}
+
+#divSobre .div .apresentacaoNome {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+#divSobre .div .descricaoSobre {
+  font-size: 16px;
+}
+
+.divInfo {
+  margin-top: 20px;
+}
+
+.spanInfo {
+  display: block;
+  margin-top: 20px;
+}
+
+.spanInfo i {
+  color: #f6009c;
+  font-size: 22px;
+  text-align: center;
+  width: 34px;
+  margin-bottom: 10px;
+}
+
+.bordaSobre {
+  width: 100%;
+  border-bottom: 5px solid #f6009c;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.btnSobre {
+  margin-top: 20px;
+  width: 146px;
+  border: 0px solid #fff;
+  color: #fff;
+  background-color: #f6009c;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.btnSobre i {
+  margin-right: 6px;
+}
+
+.spanResumo {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btnResumo {
+  margin-top: 20px;
+  margin-right: 12px;
+  width: 146px;
+  border: 0px solid #fff;
+  color: #333;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btnResumo.ativo {
+  margin-top: 20px;
+  width: 146px;
+  border: 0px solid #fff;
+  color: #fff;
+  background-color: #f6009c;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.cardEducacao {
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  width: 300px;
+  height: 180px;
+  border-bottom: 8px solid #f6009c;
+  padding: 15px;
+}
+
+.cardEducacao .fas.fa-graduation-cap,
+.cardEducacao .fas.fa-laptop {
+  color: #f6009c;
+  font-size: 35px;
+  display: block;
+}
+
+.cardEducacao .nomeCurso {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 14px;
+  display: block;
+}
+
+.cardEducacao .nomeInstituicao {
+  font-size: 17px;
+  display: block;
+}
+
+.cardEducacao .dataCurso {
+  color: #777;
+  font-weight: bold;
+}
+
+.cardPortfolio {
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cardPortfolio .headerCard {
+  background-color: #ddd;
+  color: #6a6a6a;
+  height: 35px;
+  padding: 5px 10px 10px 8px;
+}
+
+.cardPortfolio .headerCard .bolinhaVermelha {
+  color: #ff5f57;
+}
+
+.cardPortfolio .headerCard .bolinhaAmarela {
+  color: #ffbd2e;
+}
+
+.cardPortfolio .headerCard .bolinhaVerde {
+  color: #28ca41;
+}
+
+.cardPortfolio .headerCard .nomeProjeto {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+
+.paddingPorfolio {
+  padding: 30px 100px 0px 330px;
+  margin: 0 auto;
+}
+
+.cardEducacao .nomeHabilidades {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.cardEducacao .nomeCurso {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 14px;
+  display: block;
+}
+
+.cardEducacao .progress {
+  margin-top: 30px;
+}
+
+.cardEducacao .bg-danger {
+  background-color: #f6009c !important;
+}
+
+.cardEducacao .valorProgressBar {
+  box-shadow: #87878752 1px 1px 1px 1px;
+  padding: 8px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  position: absolute;
+}
+
+.acessarSite {
+  font-size: 13px;
+  margin-top: 3px;
+  margin-left: 20%;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.acessarSite:hover {
+  color: #0063cc;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.paddingDivContato {
+  padding: 30px 100px 0px 330px;
+  margin: 0 auto;
+}
+
+.tituloSessao {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.divBtnContato {
+  margin: auto auto;
+  text-align: center;
+}
+
+.btnWpp {
+  margin-top: 20px;
+  margin-right: 12px;
+  width: 146px;
+  border: 0px solid #fff;
+  color: #fff;
+  background-color: #009714;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.btnEmail {
+  margin-top: 20px;
+  width: 146px;
+  border: 0px solid #fff;
+  color: #fff;
+  background-color: #f6009c;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.grupoBtnResumo {
+  display: block;
+}
+
+#dropdownResumo {
+  display: none;
+}
+/**Hamburger**/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Icon 1 */
+
+#hamburger {
+  width: 30px;
+  height: 0px;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #f6009c;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.paddingResumo {
+  padding: 30px 100px 0px 330px;
+  margin: 0 auto;
+}
+
+#divContato {
+  overflow: hidden;
+}
+/* Icon 3 */
+
+#hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger span:nth-child(2),
+#hamburger span:nth-child(3) {
+  top: 10px;
+}
+
+#hamburger span:nth-child(4) {
+  top: 20px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburger.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+@media (min-width: 1240px) {
+  .backgroundPortfolio {
+    height: auto;
+    width: 100%;
+  }
+  #hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1239px) {
+  #divInicio div {
+    margin-left: 120px;
+  }
+  #hamburger {
+    display: none;
+  }
+  .cardEducacao .nomeHabilidades {
+    font-size: 18px;
+    margin-left: 2px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #divInicio div {
+    width: 100%;
+    margin-left: 130px;
+  }
+  #hamburger {
+    display: none;
+  }
+  .divBtnContato {
+    margin-top: 30px;
+    text-align: initial;
+  }
+  .cardEducacao .nomeHabilidades {
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  .cardEducacao img,
+  .cardEducacao svg {
+    margin: 0 auto;
+    display: block;
+  }
+  .paddingResumo {
+    padding: 30px 30px 0px 270px;
+    margin: 0 auto;
+  }
+  .btnResumo {
+    margin-right: 5px;
+    width: 125px;
+  }
+  .btnResumo.ativo {
+    width: 125px;
+  }
+  .cardEducacao .nomeCurso {
+    font-size: 16px;
+  }
+  .cardEducacao .nomeInstituicao {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  #divInicio div {
+    width: 100%;
+    margin-left: 0px;
+  }
+  nav {
+    z-index: 2;
+    display: none;
+  }
+  .open ~ nav {
+    display: block;
+  }
+  #divSobre .div {
+    padding: 30px 100px 0px 50px;
+    margin: 0 auto;
+  }
+  .paddingPorfolio {
+    padding: 30px 0px 0px 50px;
+  }
+  .paddingDivContato {
+    padding: 30px 0px 0px 25px;
+  }
+  .divBtnContato {
+    margin-top: 25px;
+  }
+  .cardEducacao .nomeHabilidades {
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  .cardEducacao img,
+  .cardEducacao svg {
+    margin: 0 auto;
+    display: block;
+  }
+  .cardEducacao .nomeCurso {
+    font-size: 16px;
+  }
+  .cardEducacao .nomeInstituicao {
+    font-size: 15px;
+  }
+  .paddingResumo {
+    padding: 30px 3% 0px 3%;
+    margin: 0 auto;
+  }
+  .btnResumo {
+    margin-right: 5px;
+    width: 125px;
+  }
+  .btnResumo.ativo {
+    width: 125px;
+  }
+  .cardEducacao {
+    height: 200px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  #divInicio div {
+    width: 100%;
+    margin-left: 0px;
+  }
+  nav {
+    z-index: 2;
+    display: none;
+  }
+  .open ~ nav {
+    display: block;
+  }
+  #divSobre .div {
+    padding: 30px 100px 0px 30px;
+    margin: 0 auto;
+  }
+  .paddingPorfolio {
+    padding: 30px 0px 0px 25px;
+  }
+  .cardPortfolio {
+    width: 92%;
+  }
+  .paddingDivContato {
+    padding: 30px 0px 0px 25px;
+  }
+  .divBtnContato {
+    margin-top: 25px;
+  }
+  .cardEducacao .nomeHabilidades {
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  .cardEducacao img,
+  .cardEducacao svg {
+    margin: 0 auto;
+    display: block;
+  }
+  .paddingResumo {
+    padding: 30px 3% 0px 3%;
+    margin: 0 auto;
+  }
+  .btnResumo {
+    margin-right: 5px;
+    width: 120px;
+  }
+  .btnResumo.ativo {
+    width: 120px;
+  }
+  .cardEducacao {
+    height: 200px;
+    width: 95%;
+  }
+  .spanResumo {
+    font-size: 24px;
+  }
+  #sessaoEducacao .col-md-12,
+  #sessaoExperiencia .col-md-12,
+  #sessaoHabilidades .col-md-12 {
+    display: block !important;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  #divInicio div {
+    width: 100%;
+    margin-left: 0px;
+  }
+  nav {
+    z-index: 2;
+    display: none;
+  }
+  .open ~ nav {
+    display: block;
+  }
+  #divSobre .div {
+    padding: 30px 100px 0px 30px;
+    margin: 0 auto;
+  }
+  .paddingPorfolio {
+    padding: 30px 0px 0px 25px;
+  }
+  .cardPortfolio {
+    width: 90%;
+  }
+  .paddingDivContato {
+    padding: 30px 0px 0px 25px;
+  }
+  .divBtnContato {
+    margin-top: 25px;
+  }
+  .cardEducacao .nomeHabilidades {
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  .cardEducacao img,
+  .cardEducacao svg {
+    display: none;
+  }
+  .cardEducacao .nomeHabilidades {
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  .cardEducacao img,
+  .cardEducacao svg {
+    margin: 0 auto;
+    display: block;
+  }
+  .paddingResumo {
+    padding: 30px 3% 0px 3%;
+    margin: 0 auto;
+  }
+  .btnResumo {
+    margin-right: 3px;
+    width: 110px;
+  }
+  .btnResumo.ativo {
+    width: 110px;
+  }
+  .cardEducacao {
+    height: 200px;
+    width: 95%;
+  }
+  .spanResumo {
+    font-size: 20px;
+  }
+  #sessaoEducacao .col-md-12,
+  #sessaoExperiencia .col-md-12,
+  #sessaoHabilidades .col-md-12 {
+    display: block !important;
+  }
+}
+
+@media (max-width: 320px) {
+  #divInicio div {
+    width: 100%;
+    margin-left: 0px;
+  }
+  nav {
+    z-index: 2;
+    display: none;
+  }
+  .open ~ nav {
+    display: block;
+  }
+  #divSobre .div {
+    padding: 30px 100px 0px 30px;
+    margin: 0 auto;
+  }
+  .paddingPorfolio {
+    padding: 22px 0px 0px 18px;
+  }
+  #hamburger {
+    top: 28px;
+  }
+  .cardPortfolio {
+    width: 92%;
+  }
+  .paddingDivContato {
+    padding: 30px 0px 0px 25px;
+  }
+  .divBtnContato {
+    margin-top: 25px;
+  }
+  .btnWpp {
+    margin-top: 12px 0px 0px 0px;
+  }
+  .btnEmail {
+    margin-top: 12px 0px 0px 0px;
+  }
+  .cardEducacao .nomeHabilidades {
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  .cardEducacao img,
+  .cardEducacao svg {
+    display: none;
+  }
+  .cardEducacao .nomeHabilidades {
+    font-size: 18px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  .cardEducacao img,
+  .cardEducacao svg {
+    margin: 0 auto;
+    display: block;
+  }
+  .paddingResumo {
+    padding: 30px 3% 0px 3%;
+    margin: 0 auto;
+  }
+  .btnResumo {
+    margin-right: 5px;
+    width: 120px;
+  }
+  .btnResumo.ativo {
+    width: 120px;
+  }
+  .cardEducacao {
+    height: 200px;
+    width: 95%;
+  }
+  .spanResumo {
+    font-size: 24px;
+  }
+  #sessaoEducacao .col-md-12,
+  #sessaoExperiencia .col-md-12,
+  #sessaoHabilidades .col-md-12 {
+    display: block !important;
+  }
+  .grupoBtnResumo {
+    display: none;
+  }
+  .dropdownResumo {
+    display: block;
+  }
+}
