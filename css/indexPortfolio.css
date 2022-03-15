@@ -75,7 +75,7 @@ ul.ulNav a {
 #divResumo,
 #divPortfolio {
   background-color: #100E17;
-  height: 100vh;
+  min-height: 100vh;
   font-family: sans-serif, Roboto;
 }
 
@@ -181,7 +181,7 @@ margin-bottom: 0.8em;
   background-color: #f6009c;
   padding: 8px;
   border-radius: 3px;
-  display: block;
+  margin-bottom: 20px;
 }
 
 .btnSobre i {
@@ -507,9 +507,16 @@ a:hover {
     font-size: 18px;
     margin-left: 2px;
   }
+  #divSobre{
+    display: block;
+}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    #divSobre{
+        display: block;
+    }
+
 #divInicio .nomeInicio{
     font-size: 50px;
 }
@@ -552,6 +559,10 @@ a:hover {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
+  #divSobre{
+      display: block;
+      padding: 0;
+  }
 
   #divInicio {    
     padding-left: 5em;
@@ -611,12 +622,34 @@ a:hover {
   .cardEducacao {
     height: 200px;
   }
+
+  #divSobre .textoSobre{
+    margin:30px;
+}
+
+#divSobre .imagemSobre{
+    margin:0 30px 30px 30px;
+}
+
 }
 
 @media (min-width: 376px) and (max-width: 425px) {
     #divInicio {    
         padding-left: 3em;
       }
+
+      #divSobre{
+        display: block;
+        padding: 0;
+    }
+
+    #divSobre .textoSobre{
+        margin:30px;
+    }
+
+    #divSobre .imagemSobre{
+        margin:30px 0 30px 30px;
+    }
 
       
   #divInicio .nomeInicio{
@@ -694,6 +727,11 @@ a:hover {
     z-index: 2;
     display: none;
   }
+
+  #divSobre{
+    display: block;
+    padding: 0;
+}
   .open ~ nav {
     display: block;
   }
@@ -850,4 +888,9 @@ a:hover {
   .dropdownResumo {
     display: block;
   }
+
+  #divSobre{
+    display: block;
+    padding: 0;
+}
 }
