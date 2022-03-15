@@ -74,7 +74,7 @@ ul.ulNav a {
 #divContato,
 #divResumo,
 #divPortfolio {
-  background-color: #c5c5c5;
+  background-color: #100E17;
   height: 100vh;
   font-family: sans-serif, Roboto;
 }
@@ -133,45 +133,42 @@ ul.ulNav a {
 #divInicio .redesSociais a{
     margin-right:12px; background-color: #f6009cd4; border-radius: 2px; width: 40px; height: 40px; cursor: pointer; padding: 8px 5px 9px 9px; color: #fff;
 }
-
-#divSobre .div {
-  padding: 30px 100px 0px 330px;
-  margin: 0 auto;
+#divSobre{
+    padding: 50px 70px 0px 280px;
+    color:rgb(197, 197, 197);
+    display: flex;
+    font-size: 14px;
 }
 
-#divSobre .div .apresentacaoNome {
+#divSobre img{
+    width: 30em;
+    margin-top: 5em;
+}
+#divSobre .tecnologias {
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#divSobre .tecnologias span{
+color:#eee;
+background-color: transparent;
+padding: 0.4em;
+border:1px solid #f6009c;
+border-radius:0.5em;
+margin-right: 0.8em;
+margin-bottom: 0.8em;
+}
+
+#divSobre .apresentacaoNome {
   display: block;
   margin-bottom: 30px;
   font-size: 22px;
 }
 
-#divSobre .div .descricaoSobre {
+#divSobre .descricaoSobre {
   font-size: 16px;
-}
-
-.divInfo {
-  margin-top: 20px;
-}
-
-.spanInfo {
-  display: block;
-  margin-top: 20px;
-}
-
-.spanInfo i {
-  color: #f6009c;
-  font-size: 22px;
-  text-align: center;
-  width: 34px;
-  margin-bottom: 10px;
-}
-
-.bordaSobre {
-  width: 100%;
-  border-bottom: 5px solid #f6009c;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  border-radius: 20px;
+  text-align: justify;
 }
 
 .btnSobre {
@@ -182,6 +179,7 @@ ul.ulNav a {
   background-color: #f6009c;
   padding: 8px;
   border-radius: 3px;
+  display: block;
 }
 
 .btnSobre i {
