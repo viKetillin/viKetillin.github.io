@@ -8,6 +8,10 @@ nav {
   z-index: 1;
 }
 
+#sessaoEducacao .col-md-12{
+    display: flex;
+}
+
 #divResumo .row {
   padding: 0;
 }
@@ -192,19 +196,27 @@ margin-bottom: 0.8em;
   font-size: 26px;
   text-transform: uppercase;
   font-weight: bold;
+  color:#eee;
 }
 
 .btnResumo {
   margin-top: 20px;
   margin-right: 12px;
   width: 146px;
-  border: 0px solid #fff;
+  border: 0px solid #eee;
   color: #333;
-  background-color: #fff;
+  background-color: #eee;
   padding: 8px;
   border-radius: 3px;
   font-size: 18px;
   cursor: pointer;
+}
+
+.nivelFormacao{
+    color: #f6009c;
+    font-size: 18px;
+    margin-left: 12px;
+    font-weight: 600;
 }
 
 .btnResumo.ativo {
@@ -220,8 +232,8 @@ margin-bottom: 0.8em;
 .cardEducacao {
   margin-top: 20px;
   margin-right: 20px;
-  background-color: #fff;
-  width: 300px;
+  background-color: #eee;
+  width: 330px;
   height: 180px;
   border-bottom: 8px solid #f6009c;
   padding: 15px;
@@ -231,7 +243,6 @@ margin-bottom: 0.8em;
 .cardEducacao .fas.fa-laptop {
   color: #f6009c;
   font-size: 35px;
-  display: block;
 }
 
 .cardEducacao .nomeCurso {
@@ -357,8 +368,12 @@ a:hover {
   margin-bottom: 30px;
   font-size: 26px;
   text-transform: uppercase;
+  color:#eee;
 }
 
+.removerCol{
+    color:#eee;
+}
 .divBtnContato {
   margin: auto auto;
   text-align: center;
@@ -510,9 +525,19 @@ a:hover {
   #divSobre{
     display: block;
 }
+#sessaoEducacao .col-md-12{
+    display: block;
+}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    #sessaoEducacao .col-md-12{
+        display: block;
+    }
+    .cardEducacao{
+        height: 160px;
+    }
+
     #divSobre{
         display: block;
     }
@@ -559,6 +584,9 @@ a:hover {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
+    #sessaoEducacao .col-md-12{
+        display: block;
+    }
   #divSobre{
       display: block;
       padding: 0;
@@ -637,6 +665,9 @@ a:hover {
 }
 
 @media (min-width: 376px) and (max-width: 425px) {
+    #sessaoEducacao .col-md-12{
+        display: block;
+    }
     #divInicio {    
         padding-left: 3em;
       }
@@ -719,6 +750,9 @@ a:hover {
 }
 
 @media (min-width: 321px) and (max-width: 375px) {
+    #sessaoEducacao .col-md-12{
+        display: block;
+    }
     #divInicio {    
         padding-left: 3em;
       }
@@ -814,6 +848,9 @@ a:hover {
 }
 
 @media (max-width: 320px) {
+    #sessaoEducacao .col-md-12{
+        display: block;
+    }
     
   #divSobre .imagemSobre img{
     width: 20em;        
