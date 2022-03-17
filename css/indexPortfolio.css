@@ -240,7 +240,7 @@ margin-bottom: 0.8em;
 }
 
 .cardEducacao .fas.fa-graduation-cap,
-.cardEducacao .fas.fa-laptop {
+.cardEducacao .fas.fa-laptop,  .cardEducacao .fas.fa-paint-brush{
   color: #f6009c;
   font-size: 35px;
 }
