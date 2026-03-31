@@ -1,2 +1,2 @@
-:HL["/viKetillin.github.io/_next/static/chunks/120-cwytanvbb.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"slftxC-sMpy3xd9jib7R1"}
+:HL["/_next/static/chunks/120-cwytanvbb.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"lPHwOjwXE5izC3IuhdQnc"}
