@@ -4,4 +4,4 @@
 :HL["/github_logo.webp","image"]
 :HL["/linkedin_logo.webp","image"]
 :HL["/arrow.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"vSSy2NP6lMAgInWxyZXpS"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"ahhoCFZ3LAS70PXFGDwWN"}
